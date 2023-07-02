@@ -2,7 +2,7 @@ import requests
 import pandas as pd 
 from bs4 import BeautifulSoup
 
-isv_df = pd.read_csv("ist.csv", header=0, delimiter='\t') 
+ist_df = pd.read_csv("ist.csv", header=0, delimiter='\t') 
 
 def check_prices(comic: str): 
     comic_list = comic.split(" ")
@@ -20,7 +20,7 @@ def check_opb_prices(opb_comic: str):
     return title, original_price, current_price_min, current_price_max
  
 def check_ist_prices(ist_comic: str):
-    print(isv_df) 
+    print(ist_df) 
 
 
 if __name__ == "__main__":
