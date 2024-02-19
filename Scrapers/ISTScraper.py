@@ -1,8 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import numpy as np 
 
-def scrape_dc_comics():
+def scrape_ist_dc_comics() -> list:
     base_url = "https://www.instocktrades.com/publishers/dc"
     page = 1
     comics = []
@@ -20,7 +21,7 @@ def scrape_dc_comics():
         for item in items:
             comic = {}
             comic["title"] = item.find("div", class_="title").text.strip()
-            comic["href"] = f'{base_url}{item.find("a")["href"]}'
+            comic["href"] = f'https://www.instocktrades.com{item.find("a")["href"]}'
             comic["image"] = item.find("img")["src"]
             comics.append(comic)
 
@@ -29,7 +30,7 @@ def scrape_dc_comics():
     return comics
 
 
-def add_new_comics(new_comics: list, current_csv: pd.DataFrame):
+def add_new_ist_comics(new_comics: list, current_csv: pd.DataFrame) -> pd.DataFrame:
     '''
     Columns of csv: 
     IST Url,IST Title,OPB Url,Amazon URL,Target URL,Retail Price,OPB Status,OPB Current Price,IST Status,IST Current Price,Amazon Status,Amazon Current Price,Target Status,Target Current Price,Min Current Price,All time Low Price,Target Doc Name,Last Updated
@@ -61,3 +62,15 @@ def add_new_comics(new_comics: list, current_csv: pd.DataFrame):
     return new_csv
 
 
+def get_upc_value_from_ist_product(url: str) -> str:
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, "html.parser")
+    
+    upc_element = soup.find("div", class_="upc")
+    if upc_element:
+        upc_value = upc_element.text.strip()
+        # removethe "UPC: " prefix
+        upc_value = upc_value.replace("UPC: ", "")
+        return upc_value
+    else:
+        return np.nan
