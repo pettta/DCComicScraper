@@ -8,7 +8,7 @@ def scrape_ist_dc_comics() -> list:
     page = 1
     comics = []
 
-    while page < 20:
+    while page < 30:
         url = f"{base_url}?pg={page}"
         response = requests.get(url)
         soup = BeautifulSoup(response.content, "html.parser")

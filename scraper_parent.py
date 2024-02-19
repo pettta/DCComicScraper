@@ -34,9 +34,15 @@ def write_ist_data_to_csv():
 
 
 if __name__ == "__main__":
-    write_ist_data_to_csv()
+    # TODO make these argparse options 
+    use_ist = False 
+    use_amazon = False 
+    use_opb = False
 
-    # new_ist_df = pd.read_csv("ist_rw.csv", header=0, delimiter=',', dtype={'UPC': str})
-    # new_ist_df = update_all_upcs_in_df(new_ist_df.copy(), 50)
-    # new_ist_df.to_csv("ist_rw.csv", index=False)
+    if use_ist:
+        write_ist_data_to_csv()
+    if use_amazon:
+        pass 
+    if use_opb:
+        pass 
         
