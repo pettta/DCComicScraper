@@ -1,6 +1,9 @@
-from Scrapers.ISTScraper import scrape_ist_dc_comics, add_new_ist_comics, get_upc_value_from_ist_product
+import argparse 
+
 import pandas as pd
 import numpy as np
+
+from Scrapers.ISTScraper import scrape_ist_dc_comics, add_new_ist_comics, get_upc_value_from_ist_product
 
 # NOTE: if you need headers use something like this headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'}   
 
@@ -34,15 +37,24 @@ def write_ist_data_to_csv():
 
 
 if __name__ == "__main__":
-    # TODO make these argparse options 
-    use_ist = False 
-    use_amazon = False 
-    use_opb = False
+    parser = argparse.ArgumentParser(description='Scrape comic book data from various sources')
+    parser.add_argument('--ist', action='store_true', help='Scrape IST data')
+    parser.add_argument('--amazon', action='store_true', help='Scrape Amazon data')
+    parser.add_argument('--opb', action='store_true', help='Scrape OPB data')
+    args = parser.parse_args()
+    use_ist = args.ist
+    use_amazon = args.amazon
+    use_opb = args.opb
 
     if use_ist:
         write_ist_data_to_csv()
+        exit(0)
     if use_amazon:
         pass 
+        exit(0)
     if use_opb:
-        pass 
+        pass
+        exit(0) 
+    
+    print("No scraper selected")
         
