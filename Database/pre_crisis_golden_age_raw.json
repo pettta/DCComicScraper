@@ -35,9 +35,23 @@
             "New York World's Fair (1939) #1"
         ],
         "EQUIVALENTS": [],
-        "CHILDREN": [], 
+        "CHILDREN": [],
         "PRH": "https://www.penguinrandomhouse.com/books/773723/dc-finest-superman-the-first-superhero-by-various/",
-        "IST": "https://www.instocktrades.com/products/jul247226/dc-finest-superman-the-first-superhero-tp"
+        "IST": "https://www.instocktrades.com/products/jul247226/dc-finest-superman-the-first-superhero-tp",
+        "earliest_issue": {
+            "issue": "Action Comics (1938) #1",
+            "name": "Superman: Champion of the Oppressed",
+            "publish_year": 1938,
+            "publish_month": 6,
+            "source": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1"
+        },
+        "latest_issue": {
+            "issue": "Superman (1939) #5",
+            "name": "Campaign Against the Planet",
+            "publish_year": 1940,
+            "publish_month": 7,
+            "source": "https://dcreadingorder.com/detail.php?idvalue=632"
+        }
     },
     "DC Finest: Superman: The Invisible Luthor": {
         "TYPE": "book",
@@ -71,7 +85,21 @@
         "EQUIVALENTS": [],
         "CHILDREN": [],
         "PRH": "https://www.penguinrandomhouse.com/books/796861/dc-finest-superman-the-invisible-luthor-by-various/",
-        "IST": ""
+        "IST": "",
+        "earliest_issue": {
+            "issue": "Action Comics (1938) #26",
+            "name": "Professor Cobalt's Quack Clinic",
+            "publish_year": 1940,
+            "publish_month": 7,
+            "source": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_26"
+        },
+        "latest_issue": {
+            "issue": "Superman (1939) #11",
+            "name": "Zimba's Gold Badge Terror",
+            "publish_year": 1941,
+            "publish_month": 7,
+            "source": "https://dc.fandom.com/wiki/Superman_Vol_1_11"
+        }
     },
     "DC Finest: Batman: The Case of the Chemical Syndicate": {
         "TYPE": "book",
@@ -111,7 +139,21 @@
         "EQUIVALENTS": [],
         "CHILDREN": [],
         "PRH": "https://www.penguinrandomhouse.com/books/798762/dc-finest-batman-the-case-of-the-chemical-syndicate-by-various/",
-        "IST": ""
+        "IST": "",
+        "earliest_issue": {
+            "issue": "detective comics (1937) #27",
+            "name": "The Case of the Chemical Syndicate",
+            "publish_year": 1939,
+            "publish_month": 5,
+            "source": "https://en.wikipedia.org/wiki/Detective_Comics_27"
+        },
+        "latest_issue": {
+            "issue": "batman (1940) #5",
+            "name": "The Riddle of the Missing Card",
+            "publish_year": 1941,
+            "publish_month": 4,
+            "source": "https://www.comics.org/issue/1343/"
+        }
     },
     "DC Finest: Justice Society of America: For America and Democracy": {
         "TYPE": "book",
@@ -130,7 +172,21 @@
         "EQUIVALENTS": [],
         "CHILDREN": [],
         "PRH": "https://www.penguinrandomhouse.com/books/773729/dc-finest-justice-society-of-america-for-america-and-democracy-by-various/",
-        "IST": "https://www.instocktrades.com/products/aug247265/dc-finest-justice-society-of-america-for-america-and-democracy-tp"
+        "IST": "https://www.instocktrades.com/products/aug247265/dc-finest-justice-society-of-america-for-america-and-democracy-tp",
+        "earliest_issue": {
+            "issue": "all star comics (1940) #3",
+            "name": "The First Meeting of the Justice Society of America",
+            "publish_year": 1940,
+            "publish_month": 3,
+            "source": "https://dc.fandom.com/wiki/All-Star_Comics_Vol_1_3"
+        },
+        "latest_issue": {
+            "issue": "all star comics (1940) #12",
+            "name": "The Black Dragon Menace, Introduction",
+            "publish_year": 1942,
+            "publish_month": 2,
+            "source": "https://dc.fandom.com/wiki/All-Star_Comics_Vol_1_12"
+        }
     },
     "DC Finest: Wonder Woman: Introducing Wonder Woman": {
         "TYPE": "book",
@@ -164,7 +220,21 @@
         "EQUIVALENTS": [],
         "CHILDREN": [],
         "PRH": "https://www.penguinrandomhouse.com/books/796862/dc-finest-wonder-woman-introducing-wonder-woman-by-various/",
-        "IST": ""
+        "IST": "",
+        "earliest_issue": {
+            "issue": "all-star comics (1940) #8",
+            "name": "Introducing Wonder Woman",
+            "publish_year": 1942,
+            "publish_month": 3,
+            "source": "https://dc.fandom.com/wiki/All-Star_Comics_Vol_1_8"
+        },
+        "latest_issue": {
+            "issue": "sensation comics (1942) #18",
+            "name": "The Secret City of the Incas",
+            "publish_year": 1943,
+            "publish_month": 12,
+            "source": "https://dc.fandom.com/wiki/Sensation_Comics_Vol_1_18"
+        }
     },
     "DC Finest: Justice Society of America: The Plunder of the Psycho-Pirate": {
         "TYPE": "book",
@@ -185,7 +255,21 @@
         "EQUIVALENTS": [],
         "CHILDREN": [],
         "PRH": "https://www.penguinrandomhouse.com/books/780946/dc-finest-justice-society-of-america-the-plunder-of-the-psycho-pirate-by-various/",
-        "IST": "https://www.instocktrades.com/products/mar257220/dc-finest-justice-society-of-america-the-plunder-of-the-psycho-pirate-tp"
+        "IST": "https://www.instocktrades.com/products/mar257220/dc-finest-justice-society-of-america-the-plunder-of-the-psycho-pirate-tp",
+        "earliest_issue": {
+            "issue": "all-star comics (1940) #13",
+            "name": "Shanghaied into Space, Introduction",
+            "publish_year": 1942,
+            "publish_month": 10,
+            "source": "https://dc.fandom.com/wiki/All-Star_Comics_Vol_1_13"
+        },
+        "latest_issue": {
+            "issue": "all-star comics (1940) #24",
+            "name": "This Is Our Enemy!",
+            "publish_year": 1945,
+            "publish_month": 3,
+            "source": "https://dc.fandom.com/wiki/All-Star_Comics_Vol_1_24"
+        }
     },
     "DC Finest: Plastic Man: The Origin of Plastic Man": {
         "TYPE": "book",
@@ -226,13 +310,27 @@
             "police comics (1941) #34",
             "police comics (1941) #35",
             "police comics (1941) #36",
-            "plastic man (1943) #1",
-            "plastic man (1943) #2"
+            "plastic man (1944) #1",
+            "plastic man (1944) #2"
         ],
         "EQUIVALENTS": [],
         "CHILDREN": [],
         "PRH": "https://www.penguinrandomhouse.com/books/779896/dc-finest-plastic-man-the-origin-of-plastic-man-by-jack-cole/",
-        "IST": ""
+        "IST": "",
+        "earliest_issue": {
+            "issue": "police comics (1941) #1",
+            "name": "The Origin of Plastic Man",
+            "publish_year": 1941,
+            "publish_month": 8,
+            "source": "https://dc.fandom.com/wiki/Police_Comics_Vol_1_1"
+        },
+        "latest_issue": {
+            "issue": "plastic man (1944) #2",
+            "name": "The Gay Nineties Nightmare",
+            "publish_year": 1944,
+            "publish_month": 8,
+            "source": "https://dc.fandom.com/wiki/Plastic_Man_Vol_1_2"
+        }
     },
     "DC Finest: War: The Big Five Arrive": {
         "TYPE": "book",
@@ -265,7 +363,21 @@
         "EQUIVALENTS": [],
         "CHILDREN": [],
         "PRH": "https://www.penguinrandomhouse.com/books/797536/dc-finest-war-the-big-five-arrive-by-various/",
-        "IST": ""
+        "IST": "",
+        "earliest_issue": {
+            "issue": "blackhawk (1957) #108",
+            "name": "The Doomed Tank vs. the Killer Scourge!",
+            "publish_year": 1957,
+            "publish_month": 1,
+            "source": "https://dc.fandom.com/wiki/Blackhawk_Vol_1_108"
+        },
+        "latest_issue": {
+            "issue": "all-american men of war (1957) #44",
+            "name": "A Luftwaffe Ace Teaches Me How to Fly",
+            "publish_year": 1957,
+            "publish_month": 12,
+            "source": "https://dc.fandom.com/wiki/All-American_Men_of_War_Vol_1_44"
+        }
     },
     "The Sandman Mystery Theatre Compendium One": {
         "TYPE": "book",
@@ -311,7 +423,22 @@
         "EQUIVALENTS": [],
         "CHILDREN": [],
         "PRH": "https://www.penguinrandomhouse.com/books/725747/the-sandman-mystery-theatre-compendium-one-by-matt-wagner/",
-        "IST": "https://www.instocktrades.com/products/dec227258/sandman-mystery-theatre-compendium-01-tp-(mr)"
+        "IST": "https://www.instocktrades.com/products/dec227258/sandman-mystery-theatre-compendium-01-tp-(mr)",
+        "earliest_issue": {
+            "issue": "sandman mystery theatre (1993) #1",
+            "name": "The Tarantula: Act One",
+            "publish_year": 1993,
+            "publish_month": 4,
+            "source": "https://dc.fandom.com/wiki/Sandman_Mystery_Theatre_Vol_1_1"
+        },
+        "latest_issue": {
+            "issue": "sandman mystery theatre (1993) #36",
+            "name": "Dr. Death: Act Four",
+            "publish_year": 1996,
+            "publish_month": 3,
+            "source": "https://dc.fandom.com/wiki/Sandman_Mystery_Theatre_Vol_1_36"
+        },
+        "canon_year": 1938
     },
     "Sandman Mystery Theatre Compendium Two": {
         "TYPE": "book",
@@ -356,7 +483,22 @@
         "EQUIVALENTS": [],
         "CHILDREN": [],
         "PRH": "https://www.penguinrandomhouse.com/books/796863/sandman-mystery-theatre-compendium-two-by-matt-wagner/",
-        "IST": ""
+        "IST": "",
+        "earliest_issue": {
+            "issue": "sandman mystery theatre (1993) #37",
+            "name": "The Mist: Act One",
+            "publish_year": 1996,
+            "publish_month": 4,
+            "source": "https://www.mycomicshop.com/search?TID=109601"
+        },
+        "latest_issue": {
+            "issue": "vertigo: winter's edge (1999) #2",
+            "name": "Vertigo: Winter's Edge #2",
+            "publish_year": 1999,
+            "publish_month": 1,
+            "source": "https://hellblazer.fandom.com/wiki/Winter's_Edge_issue_2"
+        },
+        "canon_year": 1938
     },
     "JSA: The Golden Age Deluxe Edition": {
         "TYPE": "book",
@@ -369,6 +511,21 @@
         "EQUIVALENTS": [],
         "CHILDREN": [],
         "PRH": "",
-        "IST": ""
+        "IST": "",
+        "earliest_issue": {
+            "issue": "the golden age (1993) #1",
+            "name": "The Golden Age, Part One",
+            "publish_year": 1993,
+            "publish_month": 9,
+            "source": "https://dc.fandom.com/wiki/Golden_Age_Vol_1_1"
+        },
+        "latest_issue": {
+            "issue": "the golden age (1993) #4",
+            "name": "The Golden Age, Part Four",
+            "publish_year": 1993,
+            "publish_month": 12,
+            "source": "https://leagueofcomicgeeks.com/comics/series/121685/the-golden-age"
+        },
+        "canon_year": 1950
     }
 }

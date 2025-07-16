@@ -12,3 +12,9 @@
 - Using Vite for tooling https://vitejs.dev/
 - Using MUI for all UI-related concerns https://mui.com/
 - To start the frontend for development first run ``` npm install  ``` then ``` npm run dev   ``` 
+
+
+# Database 
+- making massive JSON files out of the existing google docs I have via feeding it info and having LLM scrape + format 
+- using said JSON files to in combination with upsert python scripts to recreate and refill normalized SQL database on the fly 
+- using postgresql https://www.postgresql.org/ 
