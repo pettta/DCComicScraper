@@ -51,6 +51,11 @@
             "publish_year": 1940,
             "publish_month": 7,
             "source": "https://dcreadingorder.com/detail.php?idvalue=632"
+        },
+        "notable_events": {
+            "Action Comics (1938) #1": "First appearance of Superman, Lois Lane",
+            "Action Comics (1938) #6": "Superman's Phony Manager, The Man Who Sold Superman. First appearance of Jimmy Olsen",
+            "Action Comics (1938) #23": "First appearance of Lex Luthor"
         }
     },
     "DC Finest: Superman: The Invisible Luthor": {
@@ -99,6 +104,9 @@
             "publish_year": 1941,
             "publish_month": 7,
             "source": "https://dc.fandom.com/wiki/Superman_Vol_1_11"
+        },
+        "notable_events": {
+            "new york world's fair comics (1940) #2": "First cover to feature Superman, Batman, and Robin together. Jack Burnley's first published cover art for DC"
         }
     },
     "DC Finest: Batman: The Case of the Chemical Syndicate": {
@@ -153,6 +161,13 @@
             "publish_year": 1941,
             "publish_month": 4,
             "source": "https://www.comics.org/issue/1343/"
+        },
+        "notable_events": {
+            "detective comics (1937) #27": "First appearance of Batman (Bruce Wayne) and Commissioner Gordon",
+            "detective comics (1937) #33": "First telling of Batman's origin (parents' murder and vow)",
+            "detective comics (1937) #38": "First appearance of Robin (Dick Grayson)",
+            "batman (1940) #1": "First appearance of The Joker and Catwoman (The Cat)",
+            "batman (1940) #5": "First bat-themed Batmobile appears"
         }
     },
     "DC Finest: Justice Society of America: For America and Democracy": {
@@ -186,6 +201,10 @@
             "publish_year": 1942,
             "publish_month": 2,
             "source": "https://dc.fandom.com/wiki/All-Star_Comics_Vol_1_12"
+        },
+        "notable_events": {
+            "all star comics (1940) #3": "First appearance of the Justice Society of America, the first superhero team in comics",
+            "all star comics (1940) #8": "First appearance of Wonder Woman"
         }
     },
     "DC Finest: Wonder Woman: Introducing Wonder Woman": {
@@ -234,6 +253,12 @@
             "publish_year": 1943,
             "publish_month": 12,
             "source": "https://dc.fandom.com/wiki/Sensation_Comics_Vol_1_18"
+        },
+        "notable_events": {
+            "all-star comics (1940) #8": "First appearance of Wonder Woman",
+            "sensation comics (1942) #1": "First Wonder Woman solo feature",
+            "sensation comics (1942) #2": "First appearance of Etta Candy and Doctor Poison",
+            "sensation comics (1942) #5": "First appearance of Paula von Gunther"
         }
     },
     "DC Finest: Justice Society of America: The Plunder of the Psycho-Pirate": {
@@ -269,6 +294,9 @@
             "publish_year": 1945,
             "publish_month": 3,
             "source": "https://dc.fandom.com/wiki/All-Star_Comics_Vol_1_24"
+        },
+        "notable_events": {
+            "all-star comics (1940) #23": "First appearance of Psycho-Pirate (Charles Halstead)"
         }
     },
     "DC Finest: Plastic Man: The Origin of Plastic Man": {
@@ -330,6 +358,10 @@
             "publish_year": 1944,
             "publish_month": 8,
             "source": "https://dc.fandom.com/wiki/Plastic_Man_Vol_1_2"
+        },
+        "notable_events": {
+            "police comics (1941) #1": "First appearance and origin of Plastic Man (Patrick 'Eel' O'Brian)",
+            "police comics (1941) #13": "First appearance of Woozy Winks, Plastic Man's sidekick"
         }
     },
     "DC Finest: War: The Big Five Arrive": {
@@ -438,7 +470,10 @@
             "publish_month": 3,
             "source": "https://dc.fandom.com/wiki/Sandman_Mystery_Theatre_Vol_1_36"
         },
-        "canon_year": 1938
+        "canon_year": 1938,
+        "notable_events": {
+            "sandman mystery theatre (1993) #29": "Wesley Dodds meets Rex Tyler (Hourman) for the first time"
+        }
     },
     "Sandman Mystery Theatre Compendium Two": {
         "TYPE": "book",
@@ -498,7 +533,12 @@
             "publish_month": 1,
             "source": "https://hellblazer.fandom.com/wiki/Winter's_Edge_issue_2"
         },
-        "canon_year": 1938
+        "canon_year": 1938,
+        "notable_events": {
+            "sandman mystery theatre (1993) #37-40": "First chronological appearance of The Mist (Jonathan Smythe), Starman's future enemy",
+            "sandman mystery theatre (1993) #42": "Detective Jim Corrigan is assigned to the World's Fair murders, foreshadowing his future as the Spectre",
+            "sandman mystery theatre (1993) #54": "Charles McNider (pre-Doctor Mid-Nite) cameo as a physician treating a character, an early nod to the wider DC mystery men"
+        }
     },
     "JSA: The Golden Age Deluxe Edition": {
         "TYPE": "book",

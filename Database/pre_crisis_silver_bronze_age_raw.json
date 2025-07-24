@@ -134,6 +134,10 @@
                 "publish_year": 1961,
                 "publish_month": 9,
                 "source": "https://dc.fandom.com/wiki/Flash_Vol_1_123"
+            },
+            "notable_events": {
+                "showcase (1956) #4": "First appearance and origin of Barry Allen (the Silver Age Flash), start of DC's Silver Age revival",
+                "the flash (1959) #123": "First meeting between Barry Allen (Flash) and Jay Garrick (Golden Age Flash), first suggestion of the DC multiverse, first appearance of Earth-Two in-story"
             }
         },
         "DC: The New Frontier: The Deluxe Edition": {
@@ -184,7 +188,13 @@
                 "publish_month": 5,
                 "source": "https://dc.fandom.com/wiki/Justice_League:_The_New_Frontier_Special_Vol_1_1"
             },
-            "canon_year": 1962
+            "canon_year": 1962,
+            "notable_events": {
+                "dc: the new frontier (2004) #2": "Martian Manhunter arrives on Earth and assumes the identity of John Jones.",
+                "dc: the new frontier (2004) #3": "Barry Allen debuts as The Flash and foils Captain Cold; Challengers of the Unknown form after a near-fatal crash.",
+                "dc: the new frontier (2004) #5": "Hal Jordan becomes Green Lantern after receiving Abin Sur's ring",
+                "dc: the new frontier (2004) #6": "The formation of the Justice League of America"
+            }
         },
         "DC Finest: Science Fiction - The Gorilla World": {
             "TYPE": "book",
@@ -242,7 +252,8 @@
                 "publish_year": 1954,
                 "publish_month": 11,
                 "source": "https://comicbookrealm.com/cgc-analyzer/comic/id/8865/dc-comics-mystery-in-space-22"
-            }
+            },
+            "notable_events": {}
         },
         "DC Finest: Superboy - The Superdog from Krypton": {
             "TYPE": "book",
@@ -294,6 +305,9 @@
                 "publish_year": 1955,
                 "publish_month": 9,
                 "source": "https://www.comics.org/issue/12300/"
+            },
+            "notable_events": {
+                "adventure comics (1938) #210": "First appearance and origin of Krypto the Superdog"
             }
         },
         "Superman: The Silver Age Omnibus Vol. 1": {
@@ -358,6 +372,12 @@
                 "publish_year": 1960,
                 "publish_month": 5,
                 "source": "https://dc.fandom.com/wiki/Superman_Vol_1_137"
+            },
+            "notable_events": {
+                "action comics (1938) #241": "First appearance of the classic Fortress of Solitude in the Arctic, complete with the giant key only Superman can lift",
+                "action comics (1938) #242": "First appearance and origin of Brainiac; Superman discovers and secures the Bottle City of Kandor in his Fortress of Solitude",
+                "action comics (1938) #252": "First appearance and origin of Supergirl (Kara Zor-El)",
+                "action comics (1938) #254": "First appearance of the adult Bizarro (Bizarro Superman)"
             }
         },
         "Batman & Superman World's Finest: The Silver Age Omnibus Vol. 1": {
@@ -428,6 +448,9 @@
                 "publish_year": 1961,
                 "publish_month": 3,
                 "source": "https://dc.fandom.com/wiki/World%27s_Finest_Vol_1_116"
+            },
+            "notable_events": {
+                "superman (1952) #76": "First time Superman and Batman learn each other's secret identities and team up in a single story"
             }
         },
         "Batman & Superman World's Finest: The Silver Age Omnibus Vol. 2": {
@@ -493,7 +516,8 @@
                 "publish_year": 1966,
                 "publish_month": 6,
                 "source": "https://dc.fandom.com/wiki/World's_Finest_Vol_1_158"
-            }
+            },
+            "notable_events": {}
         },
         "DC Finest: Aquaman: The King of Atlantis": {
             "TYPE": "book",
@@ -588,6 +612,10 @@
                 "publish_year": 1962,
                 "publish_month": 6,
                 "source": "https://dc.fandom.com/wiki/Aquaman_Vol_1_3"
+            },
+            "notable_events": {
+                "adventure comics (1956) #229": "First Silver Age appearance of Aquaman; first appearance of Topo the octopus",
+                "showcase (1956) #30": "First solo Aquaman cover feature since Golden Age"
             }
         },
         "DC Finest: Supergirl: The Girl of Steel": {
@@ -658,6 +686,9 @@
                 "publish_year": 1962,
                 "publish_month": 5,
                 "source": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_288"
+            },
+            "notable_events": {
+                "action comics (1938) #252": "First appearance and origin of Supergirl (Kara Zor-El)."
             }
         },
         "DC Finest: Superman Family: The Giant Turtle Man": {
@@ -706,6 +737,9 @@
                 "publish_year": 1964,
                 "publish_month": 12,
                 "source": "https://dc.fandom.com/wiki/Superman%27s_Pal,_Jimmy_Olsen_Vol_1_56"
+            },
+            "notable_events": {
+                "superman's pal, jimmy olsen (1954) #53": "First appearance of Jimmy Olsen's transformation into the Giant Turtle Man"
             }
         },
         "DC Finest: Hawkman: Wings Across Time": {
@@ -756,6 +790,10 @@
                 "publish_year": 1966,
                 "publish_month": 10,
                 "source": "https://www.comics.org/issue/20406/"
+            },
+            "notable_events": {
+                "the brave and the bold (1956) #34": "First appearance and origin of the Silver Age Hawkman (Katar Hol) and Hawkgirl (Shayera Hol)",
+                "hawkman (1964) #4": "First issue of Zatanna's Search"
             }
         },
         "Green Lantern: The Silver Age Omnibus Vol. 2": {
@@ -805,71 +843,75 @@
             "EQUIVALENTS": [],
             "CHILDREN": [
                 {
-                    "TYPE": "book",
-                    "ISSUES": [
-                        "green lantern (1960) #19",
-                        "green lantern (1960) #20",
-                        "green lantern (1960) #21",
-                        "green lantern (1960) #22",
-                        "green lantern (1960) #23",
-                        "green lantern (1960) #24",
-                        "green lantern (1960) #25",
-                        "green lantern (1960) #26",
-                        "green lantern (1960) #27",
-                        "green lantern (1960) #28",
-                        "green lantern (1960) #29",
-                        "green lantern (1960) #30",
-                        "green lantern (1960) #31",
-                        "green lantern (1960) #32",
-                        "green lantern (1960) #33",
-                        "green lantern (1960) #34",
-                        "green lantern (1960) #35",
-                        "green lantern (1960) #36",
-                        "green lantern (1960) #37",
-                        "green lantern (1960) #38",
-                        "green lantern (1960) #39",
-                        "the flash (1959) #143",
-                        "the brave and the bold (1956) #59"
-                    ],
-                    "EQUIVALENTS": [],
-                    "CHILDREN": [],
-                    "PRH": "https://www.penguinrandomhouse.com/books/773730/dc-finest-green-lantern-the-defeat-of-green-lantern-by-various/",
-                    "IST": "",
-                    "TRUECHILD": false
+                    "DC Finest: Green Lantern: The Defeat of Green Lantern": {
+                        "TYPE": "book",
+                        "ISSUES": [
+                            "green lantern (1960) #19",
+                            "green lantern (1960) #20",
+                            "green lantern (1960) #21",
+                            "green lantern (1960) #22",
+                            "green lantern (1960) #23",
+                            "green lantern (1960) #24",
+                            "green lantern (1960) #25",
+                            "green lantern (1960) #26",
+                            "green lantern (1960) #27",
+                            "green lantern (1960) #28",
+                            "green lantern (1960) #29",
+                            "green lantern (1960) #30",
+                            "green lantern (1960) #31",
+                            "green lantern (1960) #32",
+                            "green lantern (1960) #33",
+                            "green lantern (1960) #34",
+                            "green lantern (1960) #35",
+                            "green lantern (1960) #36",
+                            "green lantern (1960) #37",
+                            "green lantern (1960) #38",
+                            "green lantern (1960) #39",
+                            "the flash (1959) #143",
+                            "the brave and the bold (1956) #59"
+                        ],
+                        "EQUIVALENTS": [],
+                        "CHILDREN": [],
+                        "PRH": "https://www.penguinrandomhouse.com/books/773730/dc-finest-green-lantern-the-defeat-of-green-lantern-by-various/",
+                        "IST": "",
+                        "TRUECHILD": false
+                    }
                 },
                 {
-                    "TYPE": "book",
-                    "ISSUES": [
-                        "the flash (1967) #168",
-                        "green lantern (1960) #40",
-                        "green lantern (1960) #41",
-                        "green lantern (1960) #42",
-                        "green lantern (1960) #43",
-                        "green lantern (1960) #44",
-                        "green lantern (1960) #45",
-                        "green lantern (1960) #46",
-                        "green lantern (1960) #47",
-                        "green lantern (1960) #48",
-                        "green lantern (1960) #49",
-                        "green lantern (1960) #50",
-                        "green lantern (1960) #51",
-                        "green lantern (1960) #52",
-                        "green lantern (1960) #53",
-                        "green lantern (1960) #54",
-                        "green lantern (1960) #55",
-                        "green lantern (1960) #56",
-                        "green lantern (1960) #57",
-                        "green lantern (1960) #58",
-                        "green lantern (1960) #59",
-                        "green lantern (1960) #60",
-                        "green lantern (1960) #61",
-                        "the brave and the bold (1956) #69"
-                    ],
-                    "EQUIVALENTS": [],
-                    "CHILDREN": [],
-                    "PRH": "https://www.penguinrandomhouse.ca/books/796860/dc-finest-green-lantern-earths-other-green-lantern-by-various/9781799503262",
-                    "IST": "",
-                    "TRUECHILD": false
+                    "DC Finest: Green Lantern: Earths other Green Lantern": {
+                        "TYPE": "book",
+                        "ISSUES": [
+                            "the flash (1967) #168",
+                            "green lantern (1960) #40",
+                            "green lantern (1960) #41",
+                            "green lantern (1960) #42",
+                            "green lantern (1960) #43",
+                            "green lantern (1960) #44",
+                            "green lantern (1960) #45",
+                            "green lantern (1960) #46",
+                            "green lantern (1960) #47",
+                            "green lantern (1960) #48",
+                            "green lantern (1960) #49",
+                            "green lantern (1960) #50",
+                            "green lantern (1960) #51",
+                            "green lantern (1960) #52",
+                            "green lantern (1960) #53",
+                            "green lantern (1960) #54",
+                            "green lantern (1960) #55",
+                            "green lantern (1960) #56",
+                            "green lantern (1960) #57",
+                            "green lantern (1960) #58",
+                            "green lantern (1960) #59",
+                            "green lantern (1960) #60",
+                            "green lantern (1960) #61",
+                            "the brave and the bold (1956) #69"
+                        ],
+                        "EQUIVALENTS": [],
+                        "CHILDREN": [],
+                        "PRH": "https://www.penguinrandomhouse.ca/books/796860/dc-finest-green-lantern-earths-other-green-lantern-by-various/9781799503262",
+                        "IST": "",
+                        "TRUECHILD": false
+                    }
                 }
             ],
             "PRH": "https://www.dc.com/graphic-novels/green-lantern-the-silver-age-omnibus-2017/green-lantern-the-silver-age-omnibus-vol-2",
@@ -887,6 +929,10 @@
                 "publish_year": 1970,
                 "publish_month": 3,
                 "source": "https://dc.fandom.com/wiki/Green_Lantern_Vol_2_75"
+            },
+            "notable_events": {
+                "green lantern (1960) #40": "First full origin of the Green Lantern Corps and the Guardians of the Universe revealed; classic Hal Jordan vs. Alan Scott story; history of the Multiverse and Crisis concept introduced",
+                "green lantern (1960) #59": "First appearance of Guy Gardner, who will become Earth's other Green Lantern"
             }
         },
         "DC Finest: Justice League of America: The Bridge Between Earths": {
@@ -943,9 +989,30 @@
                 }
             ],
             "PRH": "https://www.penguinrandomhouse.com/books/773727/dc-finest-justice-league-of-america-the-bridge-between-earths-by-various/",
-            "IST": ""
+            "IST": "",
+            "earliest_issue": {
+                "issue": "justice league of america (1960) #45",
+                "name": "The Super-Struggle Against Shaggy Man!",
+                "publish_year": 1966,
+                "publish_month": 6,
+                "source": "https://dc.fandom.com/wiki/Justice_League_of_America_Vol_1_45"
+            },
+            "latest_issue": {
+                "issue": "justice league of america (1960) #72",
+                "name": "13 Days to Doom!",
+                "publish_year": 1969,
+                "publish_month": 6,
+                "source": "https://dc.fandom.com/wiki/Justice_League_of_America_Vol_1_72"
+            },
+            "notable_events": {
+                "justice league of america (1960) #46": "First multiversal crisis caused by antimatter being",
+                "justice league of america (1960) #51": "End of Zatanna's Search",
+                "justice league of america (1960) #64": "First appearance of Red Tornado",
+                "justice league of america (1960) #69": "Wonder Woman leaves the Justice League",
+                "justice league of america (1960) #71": "Martian Manhunter departs the team, concluding his early founding member era"
+            }
         },
-        "DC Finest: Doom Patrol: The World’s Strangest Heroes": {
+        "DC Finest: Doom Patrol: The World's Strangest Heroes": {
             "TYPE": "book",
             "ISSUES": [
                 "the brave and the bold (1955) #65",
@@ -978,7 +1045,29 @@
             "EQUIVALENTS": [],
             "CHILDREN": [],
             "PRH": "",
-            "IST": ""
+            "IST": "",
+            "earliest_issue": {
+                "issue": "my greatest adventure (1955) #80",
+                "name": "Doom Patrol",
+                "publish_year": 1963,
+                "publish_month": 6,
+                "source": "https://dc.fandom.com/wiki/My_Greatest_Adventure_Vol_1_80"
+            },
+            "latest_issue": {
+                "issue": "doom patrol (1963) #102",
+                "name": "The Harder They Fall!",
+                "publish_year": 1968,
+                "publish_month": 4,
+                "source": "https://dc.fandom.com/wiki/Doom_Patrol_Vol_1_102"
+            },
+            "notable_events": {
+                "my greatest adventure (1955) #80": "First appearance and origin of the Doom Patrol; Robotman, Elasti-Girl, and Negative Man are recruited by the Chief",
+                "doom patrol (1963) #86": "First appearance of the Brain, Madame Rouge, and Monsieur Mallah; the formation of the Brotherhood of Evil",
+                "doom patrol (1963) #89": "First appearance of Animal-Vegetable-Mineral Man",
+                "doom patrol (1963) #91": "First appearance of Garguax",
+                "doom patrol (1963) #100": "First appearance and origin of Beast Boy (Garfield Logan)",
+                "challengers of the unknown (1958) #48": "First team-up between the Doom Patrol and the Challengers of the Unknown"
+            }
         },
         "DC Finest: Doom Patrol: The Death of the Doom Patrol!": {
             "TYPE": "book",
@@ -1012,7 +1101,21 @@
             "EQUIVALENTS": [],
             "CHILDREN": [],
             "PRH": "https://www.penguinrandomhouse.com/books/798761/dc-finest-doom-patrol-the-death-of-the-doom-patrol-by-various/",
-            "IST": ""
+            "IST": "",
+            "earliest_issue": {
+                "issue": "doom patrol (1963) #103",
+                "name": "The Meteor Man",
+                "publish_year": 1966,
+                "publish_month": 5,
+                "source": "https://dc.fandom.com/wiki/Doom_Patrol_Vol_1_103"
+            },
+            "latest_issue": {
+                "issue": "superman family (1974) #193",
+                "name": "Supergirl: 'The Gravity War'",
+                "publish_year": 1979,
+                "publish_month": 2,
+                "source": "https://dc.fandom.com/wiki/Superman_Family_Vol_1_193"
+            }
         },
         "DC Finest: Metamorpho: The Element Man": {
             "TYPE": "book",
@@ -1045,7 +1148,21 @@
             "EQUIVALENTS": [],
             "CHILDREN": [],
             "PRH": "https://www.penguinrandomhouse.com/books/780944/dc-finest-metamorpho-the-element-man-by-various/",
-            "IST": ""
+            "IST": "",
+            "earliest_issue": {
+                "issue": "the brave and the bold (1955) #57",
+                "name": "Introducing Metamorpho!",
+                "publish_year": 1965,
+                "publish_month": 1,
+                "source": "https://dc.fandom.com/wiki/The_Brave_and_the_Bold_Vol_1_57"
+            },
+            "latest_issue": {
+                "issue": "metamorpho (1965) #17",
+                "name": "The Final Chapter!",
+                "publish_year": 1968,
+                "publish_month": 9,
+                "source": "https://dc.fandom.com/wiki/Metamorpho_Vol_1_17"
+            }
         }
     },
     "bronze age": {
