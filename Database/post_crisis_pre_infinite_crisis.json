@@ -1,0 +1,139 @@
+{
+    "golden_age": {
+        "The Sandman Mystery Theatre Compendium One": {
+            "TYPE": "book",
+            "ISSUES": [
+                "sandman mystery theatre (1993) #1",
+                "sandman mystery theatre (1993) #2",
+                "sandman mystery theatre (1993) #3",
+                "sandman mystery theatre (1993) #4",
+                "sandman mystery theatre (1993) #5",
+                "sandman mystery theatre (1993) #6",
+                "sandman mystery theatre (1993) #7",
+                "sandman mystery theatre (1993) #8",
+                "sandman mystery theatre (1993) #9",
+                "sandman mystery theatre (1993) #10",
+                "sandman mystery theatre (1993) #11",
+                "sandman mystery theatre (1993) #12",
+                "sandman mystery theatre (1993) #13",
+                "sandman mystery theatre (1993) #14",
+                "sandman mystery theatre (1993) #15",
+                "sandman mystery theatre (1993) #16",
+                "sandman mystery theatre (1993) #17",
+                "sandman mystery theatre (1993) #18",
+                "sandman mystery theatre (1993) #19",
+                "sandman mystery theatre (1993) #20",
+                "sandman mystery theatre (1993) #21",
+                "sandman mystery theatre (1993) #22",
+                "sandman mystery theatre (1993) #23",
+                "sandman mystery theatre (1993) #24",
+                "sandman mystery theatre (1993) #25",
+                "sandman mystery theatre (1993) #26",
+                "sandman mystery theatre (1993) #27",
+                "sandman mystery theatre (1993) #28",
+                "sandman mystery theatre (1993) #29",
+                "sandman mystery theatre (1993) #30",
+                "sandman mystery theatre (1993) #31",
+                "sandman mystery theatre (1993) #32",
+                "sandman mystery theatre (1993) #33",
+                "sandman mystery theatre (1993) #34",
+                "sandman mystery theatre (1993) #35",
+                "sandman mystery theatre (1993) #36",
+                "sandman mystery theatre annual (1994) #1"
+            ],
+            "EQUIVALENTS": [],
+            "CHILDREN": [],
+            "PRH": "https://www.penguinrandomhouse.com/books/725747/the-sandman-mystery-theatre-compendium-one-by-matt-wagner/",
+            "IST": "https://www.instocktrades.com/products/dec227258/sandman-mystery-theatre-compendium-01-tp-(mr)",
+            "earliest_issue": {
+                "issue": "sandman mystery theatre (1993) #1",
+                "name": "The Tarantula: Act One",
+                "publish_year": 1993,
+                "publish_month": 4,
+                "source": "https://dc.fandom.com/wiki/Sandman_Mystery_Theatre_Vol_1_1"
+            },
+            "latest_issue": {
+                "issue": "sandman mystery theatre (1993) #36",
+                "name": "Dr. Death: Act Four",
+                "publish_year": 1996,
+                "publish_month": 3,
+                "source": "https://dc.fandom.com/wiki/Sandman_Mystery_Theatre_Vol_1_36"
+            },
+            "canon_year": 1938,
+            "notable_events": {
+                "sandman mystery theatre (1993) #29": "Wesley Dodds meets Rex Tyler (Hourman) for the first time"
+            }
+        },
+        "Sandman Mystery Theatre Compendium Two": {
+            "TYPE": "book",
+            "ISSUES": [
+                "sandman mystery theatre (1993) #37",
+                "sandman mystery theatre (1993) #38",
+                "sandman mystery theatre (1993) #39",
+                "sandman mystery theatre (1993) #40",
+                "sandman mystery theatre (1993) #41",
+                "sandman mystery theatre (1993) #42",
+                "sandman mystery theatre (1993) #43",
+                "sandman mystery theatre (1993) #44",
+                "sandman mystery theatre (1993) #45",
+                "sandman mystery theatre (1993) #46",
+                "sandman mystery theatre (1993) #47",
+                "sandman mystery theatre (1993) #48",
+                "sandman mystery theatre (1993) #49",
+                "sandman mystery theatre (1993) #50",
+                "sandman mystery theatre (1993) #51",
+                "sandman mystery theatre (1993) #52",
+                "sandman mystery theatre (1993) #53",
+                "sandman mystery theatre (1993) #54",
+                "sandman mystery theatre (1993) #55",
+                "sandman mystery theatre (1993) #56",
+                "sandman mystery theatre (1993) #57",
+                "sandman mystery theatre (1993) #58",
+                "sandman mystery theatre (1993) #59",
+                "sandman mystery theatre (1993) #60",
+                "sandman mystery theatre (1993) #61",
+                "sandman mystery theatre (1993) #62",
+                "sandman mystery theatre (1993) #63",
+                "sandman mystery theatre (1993) #64",
+                "sandman mystery theatre (1993) #65",
+                "sandman mystery theatre (1993) #66",
+                "sandman mystery theatre (1993) #67",
+                "sandman mystery theatre (1993) #68",
+                "sandman mystery theatre (1993) #69",
+                "sandman mystery theatre (1993) #70",
+                "vertigo: winter's edge (1998) #1",
+                "vertigo: winter's edge (1999) #2"
+            ],
+            "EQUIVALENTS": [],
+            "CHILDREN": [],
+            "PRH": "https://www.penguinrandomhouse.com/books/796863/sandman-mystery-theatre-compendium-two-by-matt-wagner/",
+            "IST": "",
+            "earliest_issue": {
+                "issue": "sandman mystery theatre (1993) #37",
+                "name": "The Mist: Act One",
+                "publish_year": 1996,
+                "publish_month": 4,
+                "source": "https://www.mycomicshop.com/search?TID=109601"
+            },
+            "latest_issue": {
+                "issue": "vertigo: winter's edge (1999) #2",
+                "name": "Vertigo: Winter's Edge #2",
+                "publish_year": 1999,
+                "publish_month": 1,
+                "source": "https://hellblazer.fandom.com/wiki/Winter's_Edge_issue_2"
+            },
+            "canon_year": 1938,
+            "notable_events": {
+                "sandman mystery theatre (1993) #37-40": "First chronological appearance of The Mist (Jonathan Smythe), Starman's future enemy",
+                "sandman mystery theatre (1993) #42": "Detective Jim Corrigan is assigned to the World's Fair murders, foreshadowing his future as the Spectre",
+                "sandman mystery theatre (1993) #54": "Charles McNider (pre-Doctor Mid-Nite) cameo as a physician treating a character, an early nod to the wider DC mystery men"
+            }
+        }
+    }, 
+    "silver age": {},
+    "bronze age": {},
+    "modern age": {},
+    "legion": {
+        "reboot": {} 
+    } 
+}
