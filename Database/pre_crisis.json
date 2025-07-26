@@ -2927,6 +2927,75 @@
                 "source": "https://dc.fandom.com/wiki/Arak:_Son_of_Thunder_Vol_1_50"
             }
         },
+        "Arion Lord of Atlantis Omnibus": {
+            "TYPE": "hypothetical",
+            "ISSUES": [
+                "arion: lord of atlantis (1982) #1",
+                "arion: lord of atlantis (1982) #2",
+                "arion: lord of atlantis (1982) #3",
+                "arion: lord of atlantis (1982) #4",
+                "arion: lord of atlantis (1982) #5",
+                "arion: lord of atlantis (1982) #6",
+                "arion: lord of atlantis (1982) #7",
+                "arion: lord of atlantis (1982) #8",
+                "arion: lord of atlantis (1982) #9",
+                "arion: lord of atlantis (1982) #10",
+                "arion: lord of atlantis (1982) #11",
+                "arion: lord of atlantis (1982) #12",
+                "arion: lord of atlantis (1982) #13",
+                "arion: lord of atlantis (1982) #14",
+                "arion: lord of atlantis (1982) #15",
+                "arion: lord of atlantis (1982) #16",
+                "arion: lord of atlantis (1982) #17",
+                "arion: lord of atlantis (1982) #18",
+                "arion: lord of atlantis (1982) #19",
+                "arion: lord of atlantis (1982) #20",
+                "arion: lord of atlantis (1982) #21",
+                "arion: lord of atlantis (1982) #22",
+                "arion: lord of atlantis (1982) #23",
+                "arion: lord of atlantis (1982) #24",
+                "arion: lord of atlantis (1982) #25",
+                "arion: lord of atlantis (1982) #26",
+                "arion: lord of atlantis (1982) #27",
+                "arion: lord of atlantis (1982) #28",
+                "arion: lord of atlantis (1982) #29",
+                "arion: lord of atlantis (1982) #30",
+                "arion: lord of atlantis (1982) #31",
+                "arion: lord of atlantis (1982) #32",
+                "arion: lord of atlantis (1982) #33",
+                "arion: lord of atlantis (1982) #34",
+                "arion: lord of atlantis (1982) #35",
+                "arion: lord of atlantis (1982) special #1",
+                "arion the immortal (1992) #1",
+                "arion the immortal (1992) #2",
+                "arion the immortal (1992) #3",
+                "arion the immortal (1992) #4",
+                "arion the immortal (1992) #5",
+                "arion the immortal (1992) #6",
+                "the warlord (1976) #55"
+            ],
+            "EQUIVALENTS": [],
+            "CHILDREN": [],
+            "PRH": "",
+            "IST": "",
+            "notable_events": {
+                "the warlord (1976) #55": "First appearance of Arion, Lord of Atlantis"
+            },
+            "earliest_issue": {
+                "issue": "the warlord (1976) #55",
+                "name": "Atlantis!",
+                "publish_year": 1982,
+                "publish_month": 3,
+                "source": "https://dc.fandom.com/wiki/Warlord_Vol_1_55"
+            },
+            "latest_issue": {
+                "issue": "arion the immortal (1992) #6",
+                "name": "Arion the Immortal #6",
+                "publish_year": 1992,
+                "publish_month": 12,
+                "source": "https://dc.fandom.com/wiki/Arion_the_Immortal_Vol_1_6"
+            }
+        },
         "New Teen Titans Omnibus Vol. 1": {
             "TYPE": "book",
             "ISSUES": [
@@ -3145,6 +3214,29 @@
                 "publish_month": 1,
                 "source": "https://dc.fandom.com/wiki/Swamp_Thing_Annual_Vol_2_2"
             }
+        },
+        "Crisis on Infinite Earths 30th Anniversary Deluxe Edition": {
+            "TYPE": "book",
+            "ISSUES": [
+                "crisis on infinite earths (1985) #1",
+                "crisis on infinite earths (1985) #2",
+                "crisis on infinite earths (1985) #3",
+                "crisis on infinite earths (1985) #4",
+                "crisis on infinite earths (1985) #5",
+                "crisis on infinite earths (1985) #6",
+                "crisis on infinite earths (1985) #7",
+                "crisis on infinite earths (1985) #8",
+                "crisis on infinite earths (1985) #9",
+                "crisis on infinite earths (1985) #10",
+                "crisis on infinite earths (1985) #11",
+                "crisis on infinite earths (1985) #12",
+                "history of the dc universe (1986) #1",
+                "history of the dc universe (1986) #2"
+            ],
+            "EQUIVALENTS": [],
+            "CHILDREN": [],
+            "PRH": "",
+            "IST": ""
         },
         "DC Finest: Wonder Woman: The Legend of Wonder Woman": {
             "TYPE": "book",
