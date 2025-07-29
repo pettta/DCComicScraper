@@ -2598,7 +2598,51 @@
                 "deadman (1986) #4"
             ],
             "EQUIVALENTS": [],
-            "CHILDREN": [],
+            "CHILDREN": [
+                {
+                    "DC Finest: Deadman: How Many Times Can a Guy Die?": {
+                        "TYPE": "book",
+                        "ISSUES": [
+                            "strange adventures (1950) #205",
+                            "strange adventures (1950) #206",
+                            "strange adventures (1950) #207",
+                            "strange adventures (1950) #208",
+                            "strange adventures (1950) #209",
+                            "strange adventures (1950) #210",
+                            "strange adventures (1950) #211",
+                            "strange adventures (1950) #212",
+                            "strange adventures (1950) #213",
+                            "strange adventures (1950) #214",
+                            "strange adventures (1950) #215",
+                            "strange adventures (1950) #216",
+                            "aquaman (1962) #50",
+                            "aquaman (1962) #51",
+                            "aquaman (1962) #52",
+                            "justice league of america (1960) #94",
+                            "the brave and the bold (1955) #79",
+                            "the brave and the bold (1955) #86",
+                            "the brave and the bold (1955) #104",
+                            "the brave and the bold (1955) #133",
+                            "the phantom stranger (1969) #33",
+                            "the phantom stranger (1969) #39",
+                            "the phantom stranger (1969) #40",
+                            "the phantom stranger (1969) #41",
+                            "world's finest (1941) #223",
+                            "world's finest (1941) #227",
+                            "the forever people (1971) #9",
+                            "the forever people (1971) #10",
+                            "challengers of the unknown (1958) #74",
+                            "superman (1939) #183"
+                        ],
+                        "EQUIVALENTS": [],
+                        "CHILDREN": [],
+                        "PRH": "https://www.penguinrandomhouse.com/books/811904/dc-finest-deadman-how-many-times-can-a-guy-die-by-joe-samachson/",
+                        "IST": "",
+                        "ELSEWORLDS": "",
+                        "TRUECHILD": false 
+                    }
+                }
+            ],
             "PRH": "https://www.penguinrandomhouse.com/books/779947/deadman-omnibus-2025-edition-by-andy-helfer/",
             "IST": "https://www.instocktrades.com/products/nov247213/deadman-omnibus-hc-(2025-edition)",
             "notable_events": {
