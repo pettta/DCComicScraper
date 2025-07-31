@@ -5,6 +5,7 @@ export interface LegendEra {
   title: string
   years: [number, number]
   description: string
+  ending_event: string 
 }
 
 export interface TimelineEvent {
