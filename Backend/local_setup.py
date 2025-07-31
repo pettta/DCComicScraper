@@ -1,0 +1,25 @@
+import argparse
+import subprocess
+import sys
+import os
+
+def install_requirements():
+    req_file = os.path.join(os.path.dirname(__file__), 'requirements.txt')
+    if os.path.exists(req_file):
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', req_file])
+    else:
+        print("requirements.txt not found, skipping installation.")
+
+def start_fastapi():
+    subprocess.check_call([sys.executable, '-m', 'uvicorn', 'main:app', '--reload'])
+
+
+
+
+parser = argparse.ArgumentParser(description="Local setup for DCComicScraper Backend")
+parser.add_argument('-r', '--no-requirements', action='store_true',
+                    help="Skip installing requirements")
+args = parser.parse_args()
+if not args.no_requirements:
+    install_requirements()
+start_fastapi()
