@@ -1,0 +1,60 @@
+/* HEADER COMPONENT STYLES */
+
+/* Header with proper color hierarchy */
+.header-glass {
+  background: rgba(26, 32, 44, 0.95) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(66, 153, 225, 0.2);
+  box-shadow: 0 8px 32px rgba(26, 32, 44, 0.1);
+}
+
+.header-title {
+  font-weight: var(--font-weight-extrabold);
+  background: linear-gradient(135deg, #ffffff 0%, var(--color-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  letter-spacing: -0.025em;
+  font-family: var(--font-family-primary);
+}
+
+.header-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: 0.025em;
+}
+
+/* Publisher selector with refined styling */
+.publisher-selector {
+  min-width: 160px;
+}
+
+.publisher-dropdown {
+  max-width: 200px;
+}
+
+:deep(.v-select .v-field) {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+}
+
+:deep(.v-field--variant-outlined .v-field__outline) {
+  --v-field-border-opacity: 0.3;
+  border-color: rgba(246, 173, 85, 0.5);
+}
+
+:deep(.v-field--variant-outlined.v-field--focused .v-field__outline) {
+  --v-field-border-opacity: 1;
+  border-color: var(--color-secondary);
+  border-width: 2px;
+}
+
+:deep(.v-select__selection) {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: var(--font-weight-medium);
+}
+
+:deep(.v-field__input) {
+  color: rgba(255, 255, 255, 0.9);
+}

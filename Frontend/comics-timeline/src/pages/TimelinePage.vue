@@ -1,12 +1,23 @@
 <template>
   <div class="timeline-page">
+    <!-- Background Elements -->
+    <div class="background-container">
+      <div class="gradient-bg"></div>
+      <div class="grid-pattern"></div>
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+
     <!-- Header -->
-    <v-app-bar color="#2c3e50" dark elevation="0" height="120">
+    <v-app-bar color="#2c3e50" dark elevation="0" height="120" class="header-glass">
       <v-container class="d-flex justify-space-between align-center">
         
         <div class="text-center flex-grow-1">
-          <h1 class="text-h3 mb-2">{{ selectedPublisher }} Comics Timeline</h1>
-          <p class="text-h6 mb-0" style="opacity: 0.9;">Explore the history and eras of {{ selectedPublisher }} Comics</p>
+          <h1 class="text-h3 mb-2 header-title">{{ selectedPublisher }} Comics Timeline</h1>
+          <p class="text-h6 mb-0 header-subtitle">Explore the history and eras of {{ selectedPublisher }} Comics</p>
         </div>
         
         <div class="publisher-selector">
@@ -26,18 +37,21 @@
     </v-app-bar>
 
     <!-- Main Content -->
-    <v-main>
-      <v-container fluid class="pa-4">
+    <v-main class="main-content">
+      <v-container fluid class="pa-8 content-container">
         <v-row>
           <v-col cols="12">
-            <Timeline v-if="!loading && !error" :legend-data="legendData" />
-            <v-card v-else-if="loading" class="pa-8 text-center">
-              <v-progress-circular indeterminate color="primary"></v-progress-circular>
-              <p class="mt-4 text-body-2 text-medium-emphasis">Loading {{ selectedPublisher }} timeline...</p>
-            </v-card>
-            <v-card v-else color="error" variant="tonal" class="pa-8 text-center">
-              <p class="text-body-2">{{ selectedPublisher }} timeline unavailable</p>
-            </v-card>
+            <div class="timeline-wrapper">
+              <Timeline v-if="!loading && !error" :legend-data="legendData" />
+              <v-card v-else-if="loading" class="pa-8 text-center loading-card" elevation="8">
+                <v-progress-circular indeterminate color="primary" size="60"></v-progress-circular>
+                <p class="mt-4 text-h6 text-medium-emphasis">Loading {{ selectedPublisher }} timeline...</p>
+              </v-card>
+              <v-card v-else color="error" variant="tonal" class="pa-8 text-center error-card" elevation="8">
+                <v-icon icon="mdi-alert-circle" size="48" class="mb-4"></v-icon>
+                <p class="text-h6">{{ selectedPublisher }} timeline unavailable</p>
+              </v-card>
+            </div>
           </v-col>
         </v-row>
       </v-container>
@@ -50,6 +64,9 @@ import { ref, onMounted } from 'vue'
 import { timelineClient } from '../clients'
 import type { LegendEra } from '../types/ui'
 import Timeline from '../components/Timeline.vue'
+
+// Import modular styles
+import '../styles/index.css'
 
 // Publisher selection
 const publishers = ['DC', 'Marvel']
@@ -93,21 +110,4 @@ onMounted(async () => {
 })
 </script>
 
-<style scoped>
-.publisher-selector {
-  min-width: 150px;
-}
 
-.publisher-dropdown {
-  max-width: 180px;
-}
-
-/* Ensure the dropdown has proper contrast on dark background */
-:deep(.v-field--variant-outlined .v-field__outline) {
-  --v-field-border-opacity: 0.6;
-}
-
-:deep(.v-field--variant-outlined.v-field--focused .v-field__outline) {
-  --v-field-border-opacity: 1;
-}
-</style>

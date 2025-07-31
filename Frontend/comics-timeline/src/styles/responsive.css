@@ -1,0 +1,105 @@
+/* RESPONSIVE DESIGN AND ACCESSIBILITY */
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .shape-1, .shape-2, .shape-3 {
+    opacity: 0.3;
+    filter: blur(60px);
+  }
+  
+  .grid-pattern {
+    background-size: 20px 20px;
+    opacity: 0.5;
+  }
+  
+  .header-title {
+    font-size: 1.75rem !important;
+    line-height: 1.2;
+  }
+  
+  .content-container {
+    padding: var(--spacing-sm);
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .timeline-wrapper {
+    padding: var(--spacing-md) 0;
+  }
+  
+  .shape-1, .shape-2, .shape-3 {
+    opacity: 0.6;
+  }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1440px) {
+  .content-container {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .gradient-bg, .floating-shapes {
+    display: none;
+  }
+  
+  .timeline-page {
+    background: #ffffff;
+  }
+  
+  .header-glass {
+    background: var(--color-primary) !important;
+    border-bottom: 2px solid var(--color-accent);
+  }
+  
+  .header-title {
+    background: #ffffff !important;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    color: #ffffff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .gradient-bg, 
+  .shape, 
+  .grid-pattern {
+    animation: none;
+  }
+  
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .timeline-page {
+    background: #f8f9fa;
+  }
+}
+
+/* Print styles */
+@media print {
+  .background-container,
+  .floating-shapes,
+  .gradient-bg {
+    display: none;
+  }
+  
+  .timeline-page {
+    background: white;
+  }
+  
+  .header-glass {
+    background: white !important;
+    color: black !important;
+  }
+}

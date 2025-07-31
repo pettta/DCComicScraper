@@ -1,0 +1,51 @@
+/* CARD COMPONENTS AND UI ELEMENTS */
+
+/* Cards with sophisticated elevation and color */
+.loading-card {
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(20px) saturate(120%);
+  border: 1px solid rgba(66, 153, 225, 0.1);
+  border-radius: var(--radius-xl) !important;
+  box-shadow: 
+    var(--shadow-xl),
+    0 0 0 1px rgba(66, 153, 225, 0.05);
+}
+
+.error-card {
+  background: rgba(254, 242, 242, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(252, 165, 165, 0.2);
+  border-radius: var(--radius-xl) !important;
+  box-shadow: 
+    0 20px 25px -5px rgba(239, 68, 68, 0.1),
+    0 10px 10px -5px rgba(239, 68, 68, 0.04);
+}
+
+/* Typography enhancements */
+:deep(.v-card-title) {
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.025em;
+}
+
+:deep(.v-card-text) {
+  line-height: 1.6;
+  color: rgba(45, 55, 72, 0.8);
+}
+
+/* Subtle scroll enhancement */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(237, 242, 247, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-accent), #3182ce);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #3182ce, #2c5282);
+}

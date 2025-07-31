@@ -1,0 +1,83 @@
+/* 
+BASE STYLES - Color Theory and Global Variables
+COLOR THEORY APPLIED:
+- Primary: Deep Navy (#1a202c) - Professional, trustworthy
+- Secondary: Warm Gold (#f6ad55) - Energy, creativity 
+- Accent: Electric Blue (#4299e1) - Technology, innovation
+- Neutral: Warm Gray (#f7fafc to #2d3748) - Balance, sophistication
+- Using 60-30-10 rule: 60% neutrals, 30% primary, 10% accent
+*/
+
+:root {
+  /* Color Variables */
+  --color-primary: #1a202c;
+  --color-secondary: #f6ad55;
+  --color-accent: #4299e1;
+  --color-neutral-lightest: #f7fafc;
+  --color-neutral-light: #edf2f7;
+  --color-neutral-medium: #e2e8f0;
+  --color-neutral-dark: #2d3748;
+  --color-neutral-darkest: #1a202c;
+  
+  /* Gradient Colors */
+  --color-gradient-blue: rgba(66, 153, 225, 0.1);
+  --color-gradient-green: rgba(72, 187, 120, 0.08);
+  --color-gradient-orange: rgba(246, 173, 85, 0.06);
+  --color-gradient-orange-dark: rgba(237, 137, 54, 0.04);
+  
+  /* Typography */
+  --font-family-primary: 'SF Pro Display', -apple-system, system-ui, sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* Spacing (8px grid system) */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Animations */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+  --easing-smooth: cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* Base Layout */
+.timeline-page {
+  position: relative;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* Main content structure */
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+.content-container {
+  width: 100%;
+}
+
+.timeline-wrapper {
+  position: relative;
+  padding: var(--spacing-lg) 0;
+}
