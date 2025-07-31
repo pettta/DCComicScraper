@@ -53,7 +53,7 @@ timeline_data = {
             "description": "DC Universe reboot following Flashpoint event",
         },
         {
-            "id": 4,
+            "id": 7,
             "title": "Rebirth",
             "years": [2016, 2018],
             "ending_event": "Doomsday Clock",
@@ -62,16 +62,40 @@ timeline_data = {
     ],
     "Marvel": [
         {
-            "id": 5,
+            "id": 8,
             "title": "Golden Age",
             "years": [1939, 1956],
             "description": "Early Marvel Comics under Timely Publications",
+            "ending_event": "Creation of the Fantastic Four",
         },
         {
-            "id": 6,
+            "id": 9,
             "title": "Silver Age",
             "years": [1961, 1970],
-            "description": "Marvel renaissance under Stan Lee",
+            "description": "Marvel renaissance under Stan Lee(but also Jack Kirby, Steve Ditko, etc.)",
+            "ending_event": "Jack Kirby's departure",
+        },
+        {
+            "id": 10,
+            "title": "Bronze Age",
+            "years": [1970, 1984],
+            "description": "A period of experimentation and change in Marvel Comics",
+            "ending_event": "Secret Wars (1984)",
+
+        },
+        {
+            "id": 11,
+            "title": "Copper Age",
+            "years": [1984, 1996],
+            "description": "Marvel's response to the DC Crisis events, leading to a more interconnected universe",
+            "ending_event": "Onslaught",
+        },
+        {
+            "id": 12,
+            "title": "Modern Age",
+            "years": [1996, 2015],
+            "description": "Marvel's current era with multiple reboots and continuities",
+            "ending_event": "Secret Wars (2015)",
         }
     ]
 }
@@ -82,34 +106,19 @@ async def get_eras(
     start_year: Optional[int] = Query(None, description="Filter eras that start after this year"),
     end_year: Optional[int] = Query(None, description="Filter eras that end before this year")
 ) -> List[Dict[str, Any]]:
-    """Get timeline eras with optional filtering"""
-    
-    # Start with all eras
     all_eras = []
     for pub, eras in timeline_data.items():
         if publisher is None or pub.lower() == publisher.lower():
             all_eras.extend(eras)
-    
-    # Apply year filters
+
     if start_year is not None:
-        all_eras = [era for era in all_eras if era["years"][0] >= start_year]
-    
+        all_eras = [era for era in all_eras if era["years"][0] >= start_year]    
     if end_year is not None:
         all_eras = [era for era in all_eras if era["years"][1] <= end_year]
-    
     if not all_eras:
         raise HTTPException(status_code=404, detail="No eras found matching the criteria")
-    
     return all_eras
 
-@router.get("/eras/{era_id}")
-async def get_era_details(era_id: int) -> Dict[str, Any]:
-    """Get detailed information about a specific era"""
-    for eras in timeline_data.values():
-        for era in eras:
-            if era["id"] == era_id:
-                return era
-    raise HTTPException(status_code=404, detail="Era not found")
 
 @router.get("/events")
 async def get_major_events(
@@ -139,21 +148,6 @@ async def get_major_events(
     
     return sorted(events, key=lambda x: x["year"])
 
-@router.get("/publishers")
-async def get_publishers() -> List[Dict[str, Any]]:
-    """Get all available publishers and their era counts"""
-    publishers = []
-    
-    for pub, eras in timeline_data.items():
-        publishers.append({
-            "name": pub,
-            "era_count": len(eras),
-            "total_years": max(era["years"][1] for era in eras) - min(era["years"][0] for era in eras),
-            "earliest_year": min(era["years"][0] for era in eras),
-            "latest_year": max(era["years"][1] for era in eras)
-        })
-    
-    return publishers
 
 @router.get("/timeline/full")
 async def get_full_timeline(
@@ -185,42 +179,3 @@ async def get_full_timeline(
             for pub, eras in timeline_data.items()
         }
     }
-
-@router.get("/search")
-async def search_timeline(
-    query: str = Query(..., description="Search term for events, eras, or descriptions"),
-    publisher: Optional[str] = Query(None, description="Filter by publisher")
-) -> Dict[str, Any]:
-    """Search through timeline data"""
-    
-    results = {
-        "eras": [],
-        "events": [],
-        "query": query
-    }
-    
-    query_lower = query.lower()
-    
-    for pub, eras in timeline_data.items():
-        if publisher is None or pub.lower() == publisher.lower():
-            for era in eras:
-                # Search in era data
-                if (query_lower in era["title"].lower() or 
-                    query_lower in era["description"].lower()):
-                    results["eras"].append({**era, "publisher": pub})
-                
-                # Search in events
-                for event in era["major_events"]:
-                    if (query_lower in event["name"].lower() or 
-                        query_lower in event["description"].lower()):
-                        results["events"].append({
-                            **event,
-                            "era_title": era["title"],
-                            "era_id": era["id"],
-                            "publisher": pub
-                        })
-    
-    if not results["eras"] and not results["events"]:
-        raise HTTPException(status_code=404, detail=f"No results found for query: {query}")
-    
-    return results

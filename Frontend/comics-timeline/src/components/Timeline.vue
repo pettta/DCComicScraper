@@ -1,6 +1,5 @@
 <template>
   <div class="timeline">
-    <h3>Comics Timeline</h3>
     <v-timeline
       direction="horizontal"
       density="comfortable"
