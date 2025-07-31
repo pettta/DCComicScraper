@@ -15,22 +15,35 @@
           <v-icon size="small">mdi-calendar</v-icon>
         </template>
         
-        <v-card>
-          <v-card-title :style="{ color: getColorForIndex(index) }">
-            {{ era.title }}
-          </v-card-title>
+        <v-card 
+          class="timeline-card"
+          :class="{ 'card-hovered': hoveredCard === index }"
+          @mouseenter="onCardHover(era, index)"
+          @mouseleave="onCardLeave"
+        >
+          <div 
+            v-if="hoveredCard === index && backgroundImage"
+            class="card-background-image"
+            :style="{ backgroundImage: `url(${backgroundImage})` }"
+          ></div>
           
-          <v-card-subtitle>
-            {{ era.ending_event || 'Ongoing' }}
-          </v-card-subtitle>
+          <div class="card-content">
+            <v-card-title :style="{ color: getColorForIndex(index) }">
+              {{ era.title }}
+            </v-card-title>
+            
+            <v-card-subtitle>
+              {{ era.ending_event || 'Ongoing' }}
+            </v-card-subtitle>
 
-          <v-card-subtitle>
-            {{ era.years[0] }} - {{ era.years[1] }}
-          </v-card-subtitle>
-          
-          <v-card-text>
-            {{ era.description }}
-          </v-card-text>
+            <v-card-subtitle>
+              {{ era.years[0] }} - {{ era.years[1] }}
+            </v-card-subtitle>
+            
+            <v-card-text>
+              {{ era.description }}
+            </v-card-text>
+          </div>
         </v-card>
       </v-timeline-item>
     </v-timeline>
@@ -40,6 +53,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import type { LegendEra } from '../types/ui'
+
+// Import timeline-specific styles
+import '../styles/timeline.css'
+
+// Import dynamic image asset manager
+import { getEventImage } from '../utils/imageAssets'
 
 export default defineComponent({
     name: 'Timeline',
@@ -60,27 +79,39 @@ export default defineComponent({
                 '#fd79a8', // Pink
                 '#a29bfe', // Purple
                 '#fd6c6c'  // Light Red
-            ]
+            ],
+            hoveredCard: null as number | null,
+            backgroundImage: null as string | null
         }
     },
     methods: {
         getColorForIndex(index: number): string {
             return this.colors[index % this.colors.length]
+        },
+        
+        async onCardHover(era: LegendEra, index: number) {
+            this.hoveredCard = index
+            
+            // Get image for the ending event using the dynamic image system
+            if (era.ending_event) {
+                const imageUrl = getEventImage(era.ending_event)
+                this.backgroundImage = imageUrl
+                
+                // Debug logging
+                if (imageUrl) {
+                    console.log(`Found image for "${era.ending_event}":`, imageUrl)
+                } else {
+                    console.log(`No image found for "${era.ending_event}"`)
+                }
+            }
+        },
+        
+        onCardLeave() {
+            this.hoveredCard = null
+            this.backgroundImage = null
         }
     }
 })
 </script>
 
-<style scoped>
-.timeline {
-    padding: 1rem;
-    width: 100%;
-}
 
-.timeline h3 {
-    margin: 0 0 2rem 0;
-    color: #333;
-    font-size: 1.5rem;
-    text-align: center;
-}
-</style>
