@@ -1,6 +1,7 @@
 // UI-related TypeScript interfaces for the Comics Timeline application
 
 export interface LegendEra {
+  id: number 
   title: string
   years: [number, number]
   description: string

@@ -18,33 +18,41 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import type { TimelineEvent } from '../types/ui'
+import { ref, computed } from 'vue'
+import type { TimelineEvent, LegendEra } from '../types/ui'
 
-// Sample timeline events - replace with actual data
-const timelineEvents = ref<TimelineEvent[]>([
-  {
-    id: 1,
-    title: "Crisis on Infinite Earths",
-    date: "1985",
-    description: "The event that ended the Pre-Crisis era and started Post-Crisis continuity.",
-    color: "#ff6b6b"
-  },
-  {
-    id: 2,
-    title: "Flashpoint",
-    date: "2011",
-    description: "The event that led to the New 52 reboot of the DC Universe.",
-    color: "#4ecdc4"
-  },
-  {
-    id: 3,
-    title: "DC Rebirth",
-    date: "2016",
-    description: "The soft reboot that brought back classic elements to DC continuity.",
-    color: "#45b7d1"
-  }
-])
+interface Props {
+  legendData: LegendEra[]
+}
+
+const props = defineProps<Props>()
+
+// Color palette to match the Legend component
+const colors = [
+  '#ff6b6b', // Red
+  '#4ecdc4', // Teal
+  '#45b7d1', // Blue
+  '#96ceb4', // Green
+  '#ffeaa7', // Yellow
+  '#fd79a8', // Pink
+  '#a29bfe', // Purple
+  '#fd6c6c'  // Light Red
+]
+
+const getColorForIndex = (index: number): string => {
+  return colors[index % colors.length]
+}
+
+// Generate timeline events from legend data
+const timelineEvents = computed<TimelineEvent[]>(() => {
+  return props.legendData.map((era, index) => ({
+    id: index + 1,
+    title: era.title,
+    date: `${era.years[0]} - ${era.years[1]}`,
+    description: era.description,
+    color: getColorForIndex(index)
+  }))
+})
 </script>
 
 <style scoped>

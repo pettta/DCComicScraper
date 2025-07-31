@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import accounts, books
+from routers import accounts, books, timeline
 
 # Create FastAPI application
 app = FastAPI(
@@ -21,6 +21,7 @@ app.add_middleware(
 # Include routers
 app.include_router(accounts.router)
 app.include_router(books.router)
+app.include_router(timeline.router)
 
 # Root endpoint
 @app.get("/")
