@@ -12,8 +12,14 @@ import flashpointImg from '../assets/flashpoint.avif'
 import rebirthImg from '../assets/rebirth.webp' 
 import doomsdayClockImg from '../assets/doomsday_clock.webp' 
 
+import fantasticFourImg from '../assets/creation_of_the_fantastic_four.webp'
+import secretWars1984Img from '../assets/secret_wars_1984.jpg' 
+import onslaughtImg from '../assets/onslaught.jpg' 
+import secretWars2015Img from '../assets/secret_wars_2015.webp' 
+
 // Image mapping - add new images here as they become available
 const imageMap: Record<string, string> = {
+  // DC Events  
   'crisis_on_infinite_earths': crisisOnInfiniteEarthsImg,
   'zero_hour': zeroHourImg,
   'infinite_crisis': infiniteCrisisImg,
@@ -21,6 +27,12 @@ const imageMap: Record<string, string> = {
   'flashpoint': flashpointImg,
   'rebirth': rebirthImg,
   'doomsday_clock': doomsdayClockImg,
+
+  // Marvel Events
+  'creation_of_the_fantastic_four': fantasticFourImg,
+  'secret_wars_1984': secretWars1984Img,
+  'onslaught': onslaughtImg,
+  'secret_wars_2015': secretWars2015Img,
 }
 
 
