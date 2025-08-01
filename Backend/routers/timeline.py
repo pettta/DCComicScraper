@@ -88,6 +88,13 @@ era_data = {
             "years": [1996, 2015],
             "description": "Marvel's current era with multiple reboots and continuities",
             "ending_event": "Secret Wars (2015)",
+        },
+        {
+            "id": 12,
+            "title": "All-New, All-Different Marvel",
+            "years": [2015, 2025],
+            "description": "Post-Secret Wars era with new directions for characters and teams",
+            "ending_event": "Ongoing",
         }
     ]
 }
