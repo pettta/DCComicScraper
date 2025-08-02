@@ -259,7 +259,8 @@
                 "all-star comics (1940) #8": "First appearance of Wonder Woman",
                 "sensation comics (1942) #1": "First Wonder Woman solo feature",
                 "sensation comics (1942) #2": "First appearance of Etta Candy and Doctor Poison",
-                "sensation comics (1942) #5": "First appearance of Paula von Gunther"
+                "sensation comics (1942) #5": "First appearance of Paula von Gunther",
+                "wonder woman (1942) #1": "First appearance of Ares"
             }
         },
         "DC Finest: Justice Society of America: The Plunder of the Psycho-Pirate": {
@@ -298,6 +299,59 @@
             },
             "notable_events": {
                 "all-star comics (1940) #23": "First appearance of Psycho-Pirate (Charles Halstead)"
+            }
+        },
+        "DC Finest: Wonder Woman: Enter the Cheetah": {
+            "TYPE": "book",
+            "ISSUES": [
+                "wonder woman (1942) #5",
+                "wonder woman (1942) #6",
+                "wonder woman (1942) #7",
+                "wonder woman (1942) #8",
+                "wonder woman (1942) #9",
+                "sensation comics (1942) #19",
+                "sensation comics (1942) #20",
+                "sensation comics (1942) #21",
+                "sensation comics (1942) #22",
+                "sensation comics (1942) #23",
+                "sensation comics (1942) #24",
+                "sensation comics (1942) #25",
+                "sensation comics (1942) #26",
+                "sensation comics (1942) #27",
+                "sensation comics (1942) #28",
+                "sensation comics (1942) #29",
+                "sensation comics (1942) #30",
+                "sensation comics (1942) #31",
+                "sensation comics (1942) #32",
+                "sensation comics (1942) #33",
+                "sensation comics (1942) #34",
+                "comic cavalcade (1942) #3",
+                "comic cavalcade (1942) #4",
+                "comic cavalcade (1942) #5",
+                "comic cavalcade (1942) #6",
+                "comic cavalcade (1942) #7",
+                "all-star comics (1940) #20"
+            ],
+            "EQUIVALENTS": [],
+            "CHILDREN": [],
+            "PRH": "https://www.penguinrandomhouse.com/books/796862/dc-finest-wonder-woman-introducing-wonder-woman-by-various/",
+            "IST": "",
+            "earliest_issue": {
+                "issue": "wonder woman (1942) #5",
+                "name": "The Battle for Womanhood / The Adventure of the Escaped Prisoners / The Invasion / The Winged Maidens of Venus",
+                "publish_year": 1943,
+                "publish_month": 6,
+                "source": "https://www.comics.org/issue/2939/"
+            },
+            "latest_issue": {
+                "issue": "all-star comics (1940) #20",
+                "name": "The Movie That Changed A Man's Life",
+                "publish_year": 1944,
+                "publish_month": 3,
+                "source": "https://dc.fandom.com/wiki/All-Star_Comics_Vol_1_20"
+            },
+            "notable_events": {
+                "wonder woman (1942) #6": "First appearance of Cheetah (Priscilla Rich)"
             }
         },
         "DC Finest: Plastic Man: The Origin of Plastic Man": {
@@ -965,72 +1019,6 @@
                 "superman (1952) #76": "First time Superman and Batman learn each other's secret identities and team up in a single story"
             }
         },
-        "Batman & Superman World's Finest: The Silver Age Omnibus Vol. 2": {
-            "TYPE": "book",
-            "ISSUES": [
-                "world's finest (1954) #117",
-                "world's finest (1954) #118",
-                "world's finest (1954) #119",
-                "world's finest (1954) #120",
-                "world's finest (1954) #121",
-                "world's finest (1954) #122",
-                "world's finest (1954) #123",
-                "world's finest (1954) #124",
-                "world's finest (1954) #125",
-                "world's finest (1954) #126",
-                "world's finest (1954) #127",
-                "world's finest (1954) #128",
-                "world's finest (1954) #129",
-                "world's finest (1954) #130",
-                "world's finest (1954) #131",
-                "world's finest (1954) #132",
-                "world's finest (1954) #133",
-                "world's finest (1954) #134",
-                "world's finest (1954) #135",
-                "world's finest (1954) #136",
-                "world's finest (1954) #137",
-                "world's finest (1954) #138",
-                "world's finest (1954) #139",
-                "world's finest (1954) #140",
-                "world's finest (1954) #141",
-                "world's finest (1954) #142",
-                "world's finest (1954) #143",
-                "world's finest (1954) #144",
-                "world's finest (1954) #145",
-                "world's finest (1954) #146",
-                "world's finest (1954) #147",
-                "world's finest (1954) #148",
-                "world's finest (1954) #149",
-                "world's finest (1954) #150",
-                "world's finest (1954) #151",
-                "world's finest (1954) #152",
-                "world's finest (1954) #153",
-                "world's finest (1954) #154",
-                "world's finest (1954) #155",
-                "world's finest (1954) #156",
-                "world's finest (1954) #157",
-                "world's finest (1954) #158"
-            ],
-            "EQUIVALENTS": [],
-            "CHILDREN": [],
-            "PRH": "https://www.penguinrandomhouse.com/books/798255/batman-and-superman-in-worlds-finest-the-silver-age-omnibus-vol-2-new-edition-by-edmond-hamilton/",
-            "IST": "https://www.instocktrades.com/products/jan267205/batman-and-superman-in-worlds-finest-the-silver-age-omnibus-vol-2-new-edition-hc",
-            "earliest_issue": {
-                "issue": "world's finest (1954) #117",
-                "name": "Super-Batwoman and the Super-Creature",
-                "publish_year": 1961,
-                "publish_month": 5,
-                "source": "https://dc.fandom.com/wiki/World's_Finest_Vol_1_117"
-            },
-            "latest_issue": {
-                "issue": "world's finest (1954) #158",
-                "name": "The Invulnerable Super-Enemy",
-                "publish_year": 1966,
-                "publish_month": 6,
-                "source": "https://dc.fandom.com/wiki/World's_Finest_Vol_1_158"
-            },
-            "notable_events": {}
-        },
         "DC Finest: Aquaman: The King of Atlantis": {
             "TYPE": "book",
             "ISSUES": [
@@ -1254,6 +1242,165 @@
                 "superman's pal, jimmy olsen (1954) #53": "First appearance of Jimmy Olsen's transformation into the Giant Turtle Man"
             }
         },
+        "Justice League of America Omnibus Vol. 1": {
+            "TYPE": "book",
+            "ISSUES": [
+                "the brave and the bold (1955) #28",
+                "the brave and the bold (1955) #29",
+                "the brave and the bold (1955) #30",
+                "justice league of america (1960) #1",
+                "justice league of america (1960) #2",
+                "justice league of america (1960) #3",
+                "justice league of america (1960) #4",
+                "justice league of america (1960) #5",
+                "justice league of america (1960) #6",
+                "justice league of america (1960) #7",
+                "justice league of america (1960) #8",
+                "justice league of america (1960) #9",
+                "justice league of america (1960) #10",
+                "justice league of america (1960) #11",
+                "justice league of america (1960) #12",
+                "justice league of america (1960) #13",
+                "justice league of america (1960) #14",
+                "justice league of america (1960) #15",
+                "justice league of america (1960) #16",
+                "justice league of america (1960) #17",
+                "justice league of america (1960) #18",
+                "justice league of america (1960) #19",
+                "justice league of america (1960) #20",
+                "justice league of america (1960) #21",
+                "justice league of america (1960) #22",
+                "justice league of america (1960) #23",
+                "justice league of america (1960) #24",
+                "justice league of america (1960) #25",
+                "justice league of america (1960) #26",
+                "justice league of america (1960) #27",
+                "justice league of america (1960) #28",
+                "justice league of america (1960) #29",
+                "justice league of america (1960) #30"
+            ],
+            "EQUIVALENTS": [
+                {
+                    "DC Finest: Justice League of America: Starro the Conqueror": {
+                        "TYPE": "book",
+                        "ISSUES": [
+                            "the brave and the bold (1955) #28",
+                            "the brave and the bold (1955) #29",
+                            "the brave and the bold (1955) #30",
+                            "justice league of america (1960) #1",
+                            "justice league of america (1960) #2",
+                            "justice league of america (1960) #3",
+                            "justice league of america (1960) #4",
+                            "justice league of america (1960) #5",
+                            "justice league of america (1960) #6",
+                            "justice league of america (1960) #7",
+                            "justice league of america (1960) #8",
+                            "justice league of america (1960) #9",
+                            "justice league of america (1960) #10",
+                            "justice league of america (1960) #11",
+                            "justice league of america (1960) #12",
+                            "justice league of america (1960) #13",
+                            "justice league of america (1960) #14",
+                            "justice league of america (1960) #15",
+                            "justice league of america (1960) #16",
+                            "justice league of america (1960) #17",
+                            "justice league of america (1960) #18",
+                            "mystery in space (1951) #75"
+                        ],
+                        "EQUIVALENTS": [],
+                        "CHILDREN": [],
+                        "PRH": "https://www.penguinrandomhouse.ca/books/809086/dc-finest-justice-league-of-america-starro-the-conqueror-by-various",
+                        "IST": ""
+                    }
+                }
+            ],
+            "CHILDREN": [],
+            "PRH": "",
+            "IST": "",
+            "earliest_issue": {
+                "issue": "the brave and the bold (1955) #28",
+                "name": "Justice League of America: Starro the Conqueror",
+                "publish_year": 1960,
+                "publish_month": 2,
+                "source": "https://dc.fandom.com/wiki/The_Brave_and_the_Bold_Vol_1_28"
+            },
+            "latest_issue": {
+                "issue": "justice league of america (1960) #30",
+                "name": "The Most Dangerous Earth of All!",
+                "publish_year": 1964,
+                "publish_month": 9,
+                "source": "https://dc.fandom.com/wiki/Justice_League_of_America_Vol_1_30"
+            },
+            "notable_events": {
+                "the brave and the bold (1955) #28": "First appearance of the Justice League of America First appearance of Starro the Conqueror. First appearance of Snapper Carr."
+            }
+        },
+        "Batman & Superman World's Finest: The Silver Age Omnibus Vol. 2": {
+            "TYPE": "book",
+            "ISSUES": [
+                "world's finest (1954) #117",
+                "world's finest (1954) #118",
+                "world's finest (1954) #119",
+                "world's finest (1954) #120",
+                "world's finest (1954) #121",
+                "world's finest (1954) #122",
+                "world's finest (1954) #123",
+                "world's finest (1954) #124",
+                "world's finest (1954) #125",
+                "world's finest (1954) #126",
+                "world's finest (1954) #127",
+                "world's finest (1954) #128",
+                "world's finest (1954) #129",
+                "world's finest (1954) #130",
+                "world's finest (1954) #131",
+                "world's finest (1954) #132",
+                "world's finest (1954) #133",
+                "world's finest (1954) #134",
+                "world's finest (1954) #135",
+                "world's finest (1954) #136",
+                "world's finest (1954) #137",
+                "world's finest (1954) #138",
+                "world's finest (1954) #139",
+                "world's finest (1954) #140",
+                "world's finest (1954) #141",
+                "world's finest (1954) #142",
+                "world's finest (1954) #143",
+                "world's finest (1954) #144",
+                "world's finest (1954) #145",
+                "world's finest (1954) #146",
+                "world's finest (1954) #147",
+                "world's finest (1954) #148",
+                "world's finest (1954) #149",
+                "world's finest (1954) #150",
+                "world's finest (1954) #151",
+                "world's finest (1954) #152",
+                "world's finest (1954) #153",
+                "world's finest (1954) #154",
+                "world's finest (1954) #155",
+                "world's finest (1954) #156",
+                "world's finest (1954) #157",
+                "world's finest (1954) #158"
+            ],
+            "EQUIVALENTS": [],
+            "CHILDREN": [],
+            "PRH": "https://www.penguinrandomhouse.com/books/798255/batman-and-superman-in-worlds-finest-the-silver-age-omnibus-vol-2-new-edition-by-edmond-hamilton/",
+            "IST": "https://www.instocktrades.com/products/jan267205/batman-and-superman-in-worlds-finest-the-silver-age-omnibus-vol-2-new-edition-hc",
+            "earliest_issue": {
+                "issue": "world's finest (1954) #117",
+                "name": "Super-Batwoman and the Super-Creature",
+                "publish_year": 1961,
+                "publish_month": 5,
+                "source": "https://dc.fandom.com/wiki/World's_Finest_Vol_1_117"
+            },
+            "latest_issue": {
+                "issue": "world's finest (1954) #158",
+                "name": "The Invulnerable Super-Enemy",
+                "publish_year": 1966,
+                "publish_month": 6,
+                "source": "https://dc.fandom.com/wiki/World's_Finest_Vol_1_158"
+            },
+            "notable_events": {}
+        },
         "DC Finest: Hawkman: Wings Across Time": {
             "TYPE": "book",
             "ISSUES": [
@@ -1447,9 +1594,56 @@
                 "green lantern (1960) #59": "First appearance of Guy Gardner, who will become Earth's other Green Lantern"
             }
         },
-        "DC Finest: Justice League of America: The Bridge Between Earths": {
+        "JLA: Zatanna's Search": {
             "TYPE": "book",
             "ISSUES": [
+                "hawkman (1964) #4",
+                "detective comics (1937) #336",
+                "atom (1962) #19",
+                "green lantern (1960) #42",
+                "detective comics (1937) #355",
+                "justice league of america (1960) #51"
+            ],
+            "EQUIVALENTS": [],
+            "CHILDREN": [],
+            "PRH": "",
+            "IST": "",
+            "earliest_issue": {
+                "issue": "hawkman (1964) #4",
+                "name": "The Girl Who Split in Two!",
+                "publish_year": 1964,
+                "publish_month": 10,
+                "source": "https://dc.fandom.com/wiki/Hawkman_Vol_1_4"
+            },
+            "latest_issue": {
+                "issue": "justice league of america (1960) #51",
+                "name": "Z-- As in Zatanna-- and Zero Hour!",
+                "publish_year": 1967,
+                "publish_month": 2,
+                "source": "https://dc.fandom.com/wiki/Justice_League_of_America_Vol_1_51"
+            },
+            "notable_events": {
+                "hawkman (1964) #4": "First issue of Zatanna's Search",
+                "justice league of america (1960) #51": "End of Zatanna's Search"
+            }
+        },
+        "Justice League of America Silver Age Omnibus Vol. 2": {
+            "TYPE": "book",
+            "ISSUES": [
+                "justice league of america (1960) #31",
+                "justice league of america (1960) #32",
+                "justice league of america (1960) #33",
+                "justice league of america (1960) #34",
+                "justice league of america (1960) #35",
+                "justice league of america (1960) #36",
+                "justice league of america (1960) #37",
+                "justice league of america (1960) #38",
+                "justice league of america (1960) #39",
+                "justice league of america (1960) #40",
+                "justice league of america (1960) #41",
+                "justice league of america (1960) #42",
+                "justice league of america (1960) #43",
+                "justice league of america (1960) #44",
                 "justice league of america (1960) #45",
                 "justice league of america (1960) #46",
                 "justice league of america (1960) #47",
@@ -1477,46 +1671,74 @@
                 "justice league of america (1960) #69",
                 "justice league of america (1960) #70",
                 "justice league of america (1960) #71",
-                "justice league of america (1960) #72"
+                "justice league of america (1960) #72",
+                "justice league of america (1960) #73",
+                "justice league of america (1960) #74",
+                "justice league of america (1960) #75",
+                "justice league of america (1960) #76",
+                "mystery in space (1951) #75"
             ],
             "EQUIVALENTS": [],
             "CHILDREN": [
                 {
-                    "JLA: Zatanna's Search": {
+                    "DC Finest: Justice League of America: The Bridge Between Earths": {
                         "TYPE": "book",
                         "ISSUES": [
-                            "hawkman (1964) #4",
-                            "detective comics (1937) #336",
-                            "atom (1962) #19",
-                            "green lantern (1960) #42",
-                            "detective comics (1937) #355",
-                            "justice league of america (1960) #51"
+                            "justice league of america (1960) #45",
+                            "justice league of america (1960) #46",
+                            "justice league of america (1960) #47",
+                            "justice league of america (1960) #48",
+                            "justice league of america (1960) #49",
+                            "justice league of america (1960) #50",
+                            "justice league of america (1960) #51",
+                            "justice league of america (1960) #52",
+                            "justice league of america (1960) #53",
+                            "justice league of america (1960) #54",
+                            "justice league of america (1960) #55",
+                            "justice league of america (1960) #56",
+                            "justice league of america (1960) #57",
+                            "justice league of america (1960) #58",
+                            "justice league of america (1960) #59",
+                            "justice league of america (1960) #60",
+                            "justice league of america (1960) #61",
+                            "justice league of america (1960) #62",
+                            "justice league of america (1960) #63",
+                            "justice league of america (1960) #64",
+                            "justice league of america (1960) #65",
+                            "justice league of america (1960) #66",
+                            "justice league of america (1960) #67",
+                            "justice league of america (1960) #68",
+                            "justice league of america (1960) #69",
+                            "justice league of america (1960) #70",
+                            "justice league of america (1960) #71",
+                            "justice league of america (1960) #72"
                         ],
                         "EQUIVALENTS": [],
                         "CHILDREN": [],
-                        "PRH": "",
+                        "PRH": "https://www.penguinrandomhouse.com/books/773727/dc-finest-justice-league-of-america-the-bridge-between-earths-by-various/",
                         "IST": "",
-                        "TRUECHILD": false
+                        "TRUECHILD": true
                     }
                 }
             ],
-            "PRH": "https://www.penguinrandomhouse.com/books/773727/dc-finest-justice-league-of-america-the-bridge-between-earths-by-various/",
+            "PRH": "",
             "IST": "",
             "earliest_issue": {
-                "issue": "justice league of america (1960) #45",
-                "name": "The Super-Struggle Against Shaggy Man!",
-                "publish_year": 1966,
-                "publish_month": 6,
-                "source": "https://dc.fandom.com/wiki/Justice_League_of_America_Vol_1_45"
+                "issue": "mystery in space (1951) #75",
+                "name": "The Planet That Came to a Standstill!",
+                "publish_year": 1962,
+                "publish_month": 5,
+                "source": "https://dc.fandom.com/wiki/Mystery_in_Space_Vol_1_75"
             },
             "latest_issue": {
-                "issue": "justice league of america (1960) #72",
-                "name": "13 Days to Doom!",
+                "issue": "justice league of america (1960) #76",
+                "name": "In Each Man There Is a Demon",
                 "publish_year": 1969,
-                "publish_month": 6,
-                "source": "https://dc.fandom.com/wiki/Justice_League_of_America_Vol_1_72"
+                "publish_month": 12,
+                "source": "https://dc.fandom.com/wiki/Justice_League_of_America_Vol_1_76"
             },
             "notable_events": {
+                "justice league of america (1960) #31": "Hawkman Joins the Justice League",
                 "justice league of america (1960) #46": "First multiversal crisis caused by antimatter being",
                 "justice league of america (1960) #51": "End of Zatanna's Search",
                 "justice league of america (1960) #64": "First appearance of Red Tornado",
@@ -2016,6 +2238,97 @@
                 "publish_year": 1970,
                 "publish_month": 3,
                 "source": "https://dc.fandom.com/wiki/The_Unexpected_Vol_1_117"
+            }
+        },
+        "DC Finest: Western - The Hangman Never Loses": {
+            "TYPE": "book",
+            "ISSUES": [
+                "all-star western (1970) #1",
+                "all-star western (1970) #2",
+                "all-star western (1970) #3",
+                "all-star western (1970) #4",
+                "all-star western (1970) #5",
+                "all-star western (1970) #6",
+                "all-star western (1970) #7",
+                "all-star western (1970) #8",
+                "all-star western (1970) #9",
+                "all-star western (1970) #10",
+                "all-star western (1970) #11"
+            ],
+            "EQUIVALENTS": [],
+            "CHILDREN": [],
+            "PRH": "https://www.penguinrandomhouse.com/books/811905/dc-finest-western-1-by-otto-binder/",
+            "IST": "",
+            "earliest_issue": {
+                "issue": "all-star western (1970) #1",
+                "name": "The Return of the Fadeaway Outlaw",
+                "publish_year": 1970,
+                "publish_month": 9,
+                "source": "https://dc.fandom.com/wiki/All-Star_Western_Vol_2_1"
+            },
+            "latest_issue": {
+                "issue": "all-star western (1970) #11",
+                "name": "The Hundred Dollar Deal",
+                "publish_year": 1972,
+                "publish_month": 5,
+                "source": "https://dc.fandom.com/wiki/All-Star_Western_Vol_2_11"
+            },
+            "notable_events": {
+                "all-star western (1970) #2": "First appearance of Outlaw and El Diablo.",
+                "all-star western (1970) #10": "First appearance of Jonah Hex."
+            }
+        },
+        "DC Finest: The Flash: The Fastest Man Dead": {
+            "TYPE": "book",
+            "ISSUES": [
+                "world's finest comics (1941) #198",
+                "the brave and the bold (1955) #99",
+                "the flash (1959) #200",
+                "the flash (1959) #201",
+                "the flash (1959) #202",
+                "the flash (1959) #203",
+                "the flash (1959) #204",
+                "the flash (1959) #206",
+                "the flash (1959) #207",
+                "the flash (1959) #208",
+                "the flash (1959) #209",
+                "the flash (1959) #210",
+                "the flash (1959) #211",
+                "the flash (1959) #212",
+                "the flash (1959) #214",
+                "the flash (1959) #215",
+                "the flash (1959) #216",
+                "the flash (1959) #217",
+                "the flash (1959) #218",
+                "the flash (1959) #219",
+                "the flash (1959) #220",
+                "the flash (1959) #221",
+                "the flash (1959) #222",
+                "the flash (1959) #223",
+                "the flash (1959) #224",
+                "the flash (1959) #225",
+                "the flash (1959) #226",
+                "the flash (1959) #227",
+                "the flash (1959) #228",
+                "the flash (1959) #229"
+            ],
+            "EQUIVALENTS": [],
+            "CHILDREN": [],
+            "PRH": "https://www.penguinrandomhouse.com/books/796851/dc-finest-the-flash-the-fastest-man-dead-by-various/",
+            "IST": "",
+            "earliest_issue": {
+                "issue": "world's finest comics (1941) #198",
+                "name": "The Race to Save the Universe!",
+                "publish_year": 1970,
+                "publish_month": 11,
+                "source": "https://dc.fandom.com/wiki/World%27s_Finest_Vol_1_198"
+            },
+            "latest_issue": {
+                "issue": "the flash (1959) #229",
+                "name": "The Rag Doll Runs Wild!",
+                "publish_year": 1974,
+                "publish_month": 9,
+                "source": "https://dc.fandom.com/wiki/The_Flash_Vol_1_229"
             }
         },
         "Absolute Swamp Thing by Len Wein and Bernie Wrightson": {
@@ -2639,7 +2952,7 @@
                         "PRH": "https://www.penguinrandomhouse.com/books/811904/dc-finest-deadman-how-many-times-can-a-guy-die-by-joe-samachson/",
                         "IST": "",
                         "ELSEWORLDS": "",
-                        "TRUECHILD": false 
+                        "TRUECHILD": false
                     }
                 }
             ],
