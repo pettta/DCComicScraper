@@ -16,10 +16,11 @@
 .timeline-card {
     position: relative;
     overflow: hidden;
-    transition: transform var(--transition-normal), box-shadow var(--transition-normal), min-height var(--transition-normal);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal), min-height var(--transition-normal), border var(--transition-normal);
     cursor: pointer;
     border-radius: var(--radius-lg);
     min-height: 200px; /* Default minimum height */
+    border: 2px solid transparent;
 }
 
 /* Enhanced size for cards with background images */
@@ -29,9 +30,22 @@
     max-width: 400px;
 }
 
+/* Selected card styling */
+.timeline-card.card-selected {
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 0 0 1px var(--color-accent), var(--shadow-lg);
+    transform: scale(1.02);
+}
+
 .timeline-card:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-xl);
+}
+
+/* Selected cards maintain their selection styling on hover */
+.timeline-card.card-selected:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 0 0 1px var(--color-accent), var(--shadow-xl);
 }
 
 /* Background Image Effects */
@@ -71,6 +85,34 @@
 .card-hovered .card-content {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(2px);
+}
+
+/* Selection indicator */
+.card-selection-indicator {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: var(--shadow-md);
+    animation: selectionPulse 0.3s ease-out;
+}
+
+@keyframes selectionPulse {
+    0% { 
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% { 
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% { 
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* Enhanced card title styling */

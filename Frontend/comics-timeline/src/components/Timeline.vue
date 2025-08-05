@@ -17,15 +17,27 @@
         
         <v-card 
           class="timeline-card"
-          :class="{ 'card-hovered': hoveredCard === index }"
+          :class="{ 
+            'card-hovered': hoveredCard === index,
+            'card-selected': selectedEras.includes(era.title)
+          }"
           @mouseenter="onCardHover(era, index)"
           @mouseleave="onCardLeave"
+          @click="onCardClick(era)"
         >
           <div 
             v-if="hoveredCard === index && backgroundImage"
             class="card-background-image"
             :style="{ backgroundImage: `url(${backgroundImage})` }"
           ></div>
+          
+          <!-- Selection indicator -->
+          <div 
+            v-if="selectedEras.includes(era.title)"
+            class="card-selection-indicator"
+          >
+            <v-icon icon="mdi-check-circle" size="24" color="success"></v-icon>
+          </div>
           
           <div class="card-content">
             <v-card-title :style="{ color: getColorForIndex(index) }">
@@ -62,6 +74,7 @@ import { getEventImage } from '../utils/imageAssets'
 
 export default defineComponent({
     name: 'Timeline',
+    emits: ['era-selection-changed'],
     props: {
         legendData: {
             type: Array as () => LegendEra[],
@@ -81,7 +94,8 @@ export default defineComponent({
                 '#fd6c6c'  // Light Red
             ],
             hoveredCard: null as number | null,
-            backgroundImage: null as string | null
+            backgroundImage: null as string | null,
+            selectedEras: [] as string[]
         }
     },
     methods: {
@@ -109,6 +123,25 @@ export default defineComponent({
         onCardLeave() {
             this.hoveredCard = null
             this.backgroundImage = null
+        },
+
+        onCardClick(era: LegendEra) {
+            const eraTitle = era.title
+            const index = this.selectedEras.indexOf(eraTitle)
+            
+            if (index > -1) {
+                // Era is already selected, remove it
+                this.selectedEras.splice(index, 1)
+            } else {
+                // Era is not selected, add it
+                this.selectedEras.push(eraTitle)
+            }
+            
+            // Emit the updated selection to parent component
+            this.$emit('era-selection-changed', [...this.selectedEras])
+            
+            // Debug logging
+            console.log('Selected eras:', this.selectedEras)
         }
     }
 })

@@ -41,8 +41,61 @@
       <v-container fluid class="pa-8 content-container">
         <v-row>
           <v-col cols="12">
+            <!-- Selected Eras Display -->
+            <v-card 
+              v-if="selectedEras.length > 0" 
+              class="mb-4 pa-4 selected-eras-card" 
+              elevation="4"
+            >
+              <v-card-title class="text-h6 pb-2">
+                Selected Eras ({{ selectedEras.length }})
+              </v-card-title>
+              
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <v-chip
+                  v-for="era in selectedEras"
+                  :key="era"
+                  color="primary"
+                  variant="elevated"
+                  closable
+                  @click:close="removeSelectedEra(era)"
+                >
+                  {{ era }}
+                </v-chip>
+              </div>
+              
+              <!-- Warning message -->
+              <v-alert
+                v-if="selectedEras.length > 1"
+                type="warning"
+                variant="tonal"
+                density="compact"
+                class="mb-3"
+                icon="mdi-alert-circle-outline"
+              >
+                Having more than one section enabled might disable certain filters
+              </v-alert>
+              
+              <!-- Load button -->
+              <div class="d-flex justify-end">
+                <v-btn
+                  color="primary"
+                  variant="elevated"
+                  @click="loadCurrentSections"
+                  :disabled="loading"
+                >
+                  <v-icon left>mdi-download</v-icon>
+                  Load Current Sections
+                </v-btn>
+              </div>
+            </v-card>
+            
             <div class="timeline-wrapper">
-              <Timeline v-if="!loading && !error" :legend-data="legendData" />
+              <Timeline 
+                v-if="!loading && !error" 
+                :legend-data="legendData" 
+                @era-selection-changed="onEraSelectionChanged"
+              />
               <v-card v-else-if="loading" class="pa-8 text-center loading-card" elevation="8">
                 <v-progress-circular indeterminate color="primary" size="60"></v-progress-circular>
                 <p class="mt-4 text-h6 text-medium-emphasis">Loading {{ selectedPublisher }} timeline...</p>
@@ -76,6 +129,7 @@ const selectedPublisher = ref<string>('DC')
 const legendData = ref<LegendEra[]>([])
 const loading = ref(true)
 const error = ref<string | null>(null)
+const selectedEras = ref<string[]>([])
 
 const fetchLegendData = async (publisher: string) => {
   loading.value = true
@@ -101,7 +155,44 @@ const fetchLegendData = async (publisher: string) => {
 // Handle publisher change
 const onPublisherChange = async (newPublisher: string) => {
   console.log(`Publisher changed to: ${newPublisher}`)
+  selectedEras.value = [] // Clear selections when publisher changes
   await fetchLegendData(newPublisher)
+}
+
+// Handle era selection changes
+const onEraSelectionChanged = (newSelectedEras: string[]) => {
+  selectedEras.value = newSelectedEras
+  console.log('Era selection updated:', newSelectedEras)
+}
+
+// Remove a specific era from selection
+const removeSelectedEra = (eraToRemove: string) => {
+  const index = selectedEras.value.indexOf(eraToRemove)
+  if (index > -1) {
+    selectedEras.value.splice(index, 1)
+    console.log('Removed era:', eraToRemove)
+  }
+}
+
+// Load current sections
+const loadCurrentSections = async () => {
+  if (selectedEras.value.length === 0) {
+    console.warn('No eras selected to load')
+    return
+  }
+
+  console.log('Loading current sections:', selectedEras.value)
+  
+  // TODO: Implement the actual loading logic here
+  // This could involve:
+  // - Fetching specific data for the selected eras
+  // - Applying filters based on the selections
+  // - Navigating to a different view
+  // - Updating the application state
+  
+  // For now, just show a confirmation
+  // You can replace this with actual implementation
+  alert(`Loading ${selectedEras.value.length} selected era(s): ${selectedEras.value.join(', ')}`)
 }
 
 // Fetch data when component mounts

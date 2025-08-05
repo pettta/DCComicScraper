@@ -1,5 +1,18 @@
 /* CARD COMPONENTS AND UI ELEMENTS */
 
+/* Selected eras display card */
+.selected-eras-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(66, 153, 225, 0.15);
+  border-radius: var(--radius-lg) !important;
+}
+
+.selected-eras-card .v-card-title {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
 /* Cards with sophisticated elevation and color */
 .loading-card {
   background: rgba(255, 255, 255, 0.98) !important;
