@@ -79,6 +79,10 @@ export default defineComponent({
         legendData: {
             type: Array as () => LegendEra[],
             required: true
+        },
+        initialSelectedEras: {
+            type: Array as () => string[],
+            default: () => []
         }
     },
     data() {
@@ -96,6 +100,22 @@ export default defineComponent({
             hoveredCard: null as number | null,
             backgroundImage: null as string | null,
             selectedEras: [] as string[]
+        }
+    },
+    mounted() {
+        // Initialize selectedEras with props
+        this.selectedEras = [...this.initialSelectedEras]
+        if (this.selectedEras.length > 0) {
+            console.log('Timeline initialized with selected eras:', this.selectedEras)
+        }
+    },
+    watch: {
+        initialSelectedEras: {
+            handler(newSelection) {
+                this.selectedEras = [...newSelection]
+                console.log('Timeline updated with new selection:', this.selectedEras)
+            },
+            deep: true
         }
     },
     methods: {

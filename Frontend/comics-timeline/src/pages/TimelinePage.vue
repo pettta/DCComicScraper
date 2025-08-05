@@ -94,6 +94,7 @@
               <Timeline 
                 v-if="!loading && !error" 
                 :legend-data="legendData" 
+                :initial-selected-eras="selectedEras"
                 @era-selection-changed="onEraSelectionChanged"
               />
               <v-card v-else-if="loading" class="pa-8 text-center loading-card" elevation="8">
@@ -113,13 +114,23 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 import { timelineClient } from '../clients'
 import type { LegendEra } from '../types/ui'
 import Timeline from '../components/Timeline.vue'
 
 // Import modular styles
 import '../styles/index.css'
+
+// Props
+const props = defineProps<{
+  selectedEras?: string[]
+}>()
+
+// Router
+const router = useRouter()
+const route = useRoute()
 
 // Publisher selection
 const publishers = ['DC', 'Marvel']
@@ -129,7 +140,15 @@ const selectedPublisher = ref<string>('DC')
 const legendData = ref<LegendEra[]>([])
 const loading = ref(true)
 const error = ref<string | null>(null)
-const selectedEras = ref<string[]>([])
+const selectedEras = ref<string[]>(props.selectedEras || [])
+
+// Watch for prop changes (when navigating with URL params)
+watch(() => props.selectedEras, (newEras) => {
+  if (newEras) {
+    selectedEras.value = [...newEras]
+    console.log('Updated selectedEras from props:', newEras)
+  }
+}, { immediate: true })
 
 const fetchLegendData = async (publisher: string) => {
   loading.value = true
@@ -174,29 +193,32 @@ const removeSelectedEra = (eraToRemove: string) => {
   }
 }
 
-// Load current sections
+// Load current sections - now navigates to /timeline route with URL params
 const loadCurrentSections = async () => {
   if (selectedEras.value.length === 0) {
     console.warn('No eras selected to load')
     return
   }
 
-  console.log('Loading current sections:', selectedEras.value)
+  console.log('Navigating to timeline with sections:', selectedEras.value)
   
-  // TODO: Implement the actual loading logic here
-  // This could involve:
-  // - Fetching specific data for the selected eras
-  // - Applying filters based on the selections
-  // - Navigating to a different view
-  // - Updating the application state
-  
-  // For now, just show a confirmation
-  // You can replace this with actual implementation
-  alert(`Loading ${selectedEras.value.length} selected era(s): ${selectedEras.value.join(', ')}`)
+  // Navigate to /timeline route with selected eras as query parameters
+  await router.push({
+    name: 'timeline',
+    query: {
+      sections: selectedEras.value,
+      publisher: selectedPublisher.value
+    }
+  })
 }
 
 // Fetch data when component mounts
 onMounted(async () => {
+  // Check if we have a publisher from URL params
+  if (route.query.publisher && typeof route.query.publisher === 'string') {
+    selectedPublisher.value = route.query.publisher
+  }
+  
   await fetchLegendData(selectedPublisher.value)
 })
 </script>
