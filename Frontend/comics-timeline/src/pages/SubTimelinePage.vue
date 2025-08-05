@@ -32,10 +32,15 @@
           <p class="text-h6 mb-0 header-subtitle">Filtered View</p>
         </div>
         
-        <div class="publisher-info">
-          <v-chip color="primary" variant="elevated" size="large">
-            {{ publisher }}
-          </v-chip>
+        <div class="d-flex align-center ga-4">
+          <div class="publisher-info">
+            <v-chip color="primary" variant="elevated" size="large">
+              {{ publisher }}
+            </v-chip>
+          </div>
+          
+          <!-- Login Dialog -->
+          <LoginDialog />
         </div>
       </v-container>
     </v-app-bar>
@@ -103,6 +108,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import LoginDialog from '../components/LoginDialog.vue'
 
 // Import modular styles
 import '../styles/index.css'

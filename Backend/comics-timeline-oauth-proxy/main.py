@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer
 from database import create_tables, get_db
 from routers import auth, admin
+from dependencies import get_current_user
 import uvicorn
 
 # Create FastAPI application
@@ -47,7 +48,7 @@ async def health_check():
 
 # Protected test endpoint
 @app.get("/protected")
-async def protected_endpoint(current_user = Depends(auth.get_current_user)):
+async def protected_endpoint(current_user = Depends(get_current_user)):
     return {
         "message": "This is a protected endpoint",
         "user": current_user.username,

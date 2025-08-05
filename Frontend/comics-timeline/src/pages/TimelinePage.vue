@@ -20,18 +20,23 @@
           <p class="text-h6 mb-0 header-subtitle">Explore the history and eras of {{ selectedPublisher }} Comics</p>
         </div>
         
-        <div class="publisher-selector">
-          <v-select
-            v-model="selectedPublisher"
-            :items="publishers"
-            label="Publisher"
-            variant="outlined"
-            density="comfortable"
-            hide-details
-            class="publisher-dropdown"
-            dark
-            @update:model-value="onPublisherChange"
-          ></v-select>
+        <div class="d-flex align-center ga-4">
+          <div class="publisher-selector">
+            <v-select
+              v-model="selectedPublisher"
+              :items="publishers"
+              label="Publisher"
+              variant="outlined"
+              density="comfortable"
+              hide-details
+              class="publisher-dropdown"
+              dark
+              @update:model-value="onPublisherChange"
+            ></v-select>
+          </div>
+          
+          <!-- Login Dialog -->
+          <LoginDialog />
         </div>
       </v-container>
     </v-app-bar>
@@ -119,6 +124,7 @@ import { useRouter, useRoute } from 'vue-router'
 import { timelineClient } from '../clients'
 import type { LegendEra } from '../types/ui'
 import Timeline from '../components/Timeline.vue'
+import LoginDialog from '../components/LoginDialog.vue'
 
 // Import modular styles
 import '../styles/index.css'

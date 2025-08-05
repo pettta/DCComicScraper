@@ -13,13 +13,14 @@ def install_requirements():
 def start_fastapi():
     subprocess.check_call([sys.executable, '-m', 'uvicorn', 'main:app', '--reload'])
 
-
-
-
-parser = argparse.ArgumentParser(description="Local setup for DCComicScraper Backend")
-parser.add_argument('-r', '--no-requirements', action='store_true',
-                    help="Skip installing requirements")
-args = parser.parse_args()
-if not args.no_requirements:
-    install_requirements()
-start_fastapi()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Local setup for Comics Timeline Backend")
+    parser.add_argument('-r', '--no-requirements', action='store_true',
+                        help="Skip installing requirements")
+    args = parser.parse_args()
+    
+    if not args.no_requirements:
+        install_requirements()
+    
+    print("Starting Comics Timeline Backend...")
+    start_fastapi()
