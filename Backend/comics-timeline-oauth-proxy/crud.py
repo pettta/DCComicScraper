@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from database import User, TokenBlacklist
+from database import User, TokenBlacklist, EmailVerification
 from auth import get_password_hash, verify_password
 from schemas import UserCreate, UserUpdate
 from datetime import datetime
@@ -21,18 +21,30 @@ def get_users(db: Session, skip: int = 0, limit: int = 100) -> List[User]:
     """Get list of users with pagination"""
     return db.query(User).offset(skip).limit(limit).all()
 
-def create_user(db: Session, user: UserCreate) -> User:
+def create_user(db: Session, user: UserCreate, is_verified: bool = False) -> User:
     """Create a new user"""
     hashed_password = get_password_hash(user.password)
     db_user = User(
         username=user.username,
         email=user.email,
-        hashed_password=hashed_password
+        hashed_password=hashed_password,
+        is_active=is_verified,  # Only active if email is verified
+        is_email_verified=is_verified
     )
     db.add(db_user)
     db.commit()
     db.refresh(db_user)
     return db_user
+
+def verify_user_email(db: Session, user_id: int) -> bool:
+    """Mark user email as verified and activate account"""
+    user = get_user_by_id(db, user_id)
+    if user:
+        user.is_email_verified = True
+        user.is_active = True
+        db.commit()
+        return True
+    return False
 
 def authenticate_user(db: Session, username: str, password: str) -> Optional[User]:
     """Authenticate user with username and password"""

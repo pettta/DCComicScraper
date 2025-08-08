@@ -69,6 +69,19 @@ class AuthApiClient {
     })
   }
 
+  async verifyEmail(token: string) {
+    return this.request(`/auth/verify-email?token=${encodeURIComponent(token)}`, {
+      method: 'GET'
+    })
+  }
+
+  async resendVerificationEmail(email: string) {
+    return this.request('/auth/resend-verification', {
+      method: 'POST',
+      body: JSON.stringify({ email })
+    })
+  }
+
   setAuthToken(token: string) {
     localStorage.setItem('auth_token', token)
   }

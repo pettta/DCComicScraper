@@ -8,6 +8,7 @@ interface User {
   email: string
   is_active: boolean
   is_admin: boolean
+  is_email_verified: boolean
   created_at: string
   last_login?: string
 }
@@ -16,6 +17,19 @@ interface LoginResponse {
   access_token: string
   token_type: string
   expires_in: number
+}
+
+interface RegisterResponse {
+  message: string
+  verification_sent: boolean
+}
+
+interface VerifyEmailResponse {
+  message: string
+  access_token: string
+  token_type: string
+  expires_in: number
+  user: User
 }
 
 export const useAuthStore = defineStore('auth', () => {
@@ -93,7 +107,7 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
-  const register = async (username: string, email: string, password: string) => {
+  const register = async (username: string, email: string, password: string): Promise<RegisterResponse> => {
     isLoading.value = true
 
     try {
@@ -103,6 +117,32 @@ export const useAuthStore = defineStore('auth', () => {
       throw error
     } finally {
       isLoading.value = false
+    }
+  }
+
+  const verifyEmail = async (token: string) => {
+    try {
+      const response = await authApiClient.verifyEmail(token)
+      
+      if (response.access_token) {
+        // User is automatically logged in after verification
+        setAuthToken(response.access_token)
+        user.value = response.user
+        return { success: true, message: response.message }
+      }
+      
+      return { success: false, error: 'No access token received' }
+    } catch (error: any) {
+      return { success: false, error: error.message || 'Email verification failed' }
+    }
+  }
+
+  const resendVerificationEmail = async (email: string) => {
+    try {
+      const response = await authApiClient.resendVerificationEmail(email)
+      return response
+    } catch (error) {
+      throw error
     }
   }
 
@@ -163,6 +203,8 @@ export const useAuthStore = defineStore('auth', () => {
     login,
     logout,
     register,
+    verifyEmail,
+    resendVerificationEmail,
     getCurrentUser,
     changePassword,
     verifyToken,

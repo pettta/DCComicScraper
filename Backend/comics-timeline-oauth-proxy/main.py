@@ -5,6 +5,11 @@ from database import create_tables, get_db
 from routers import auth, admin
 from dependencies import get_current_user
 import uvicorn
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Create FastAPI application
 app = FastAPI(

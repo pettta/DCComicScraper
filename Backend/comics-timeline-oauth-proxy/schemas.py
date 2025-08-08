@@ -20,6 +20,7 @@ class UserResponse(UserBase):
     id: int
     is_active: bool
     is_admin: bool
+    is_email_verified: bool
     created_at: datetime
     last_login: Optional[datetime] = None
 
@@ -48,3 +49,12 @@ class PasswordChange(BaseModel):
 # Admin user creation schema
 class AdminUserCreate(UserCreate):
     is_admin: bool = False
+
+# Email verification schemas
+class EmailVerificationRequest(BaseModel):
+    email: str
+    username: str
+
+class EmailVerificationResponse(BaseModel):
+    message: str
+    verification_sent: bool

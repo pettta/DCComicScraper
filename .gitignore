@@ -1,2 +1,5 @@
 __pycache__
-/Frontend/comics-timeline/.vscode
+Frontend/comics-timeline/.vscode
+Backend/comics-timeline-oauth-proxy/.env
+Backend/comics-timeline-oauth-proxy/comics_auth.db
+scripts/

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import TimelinePage from '@/pages/TimelinePage.vue'
 import SubTimelinePage from '@/pages/SubTimelinePage.vue'
+import EmailVerificationPage from '@/views/EmailVerificationPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,11 @@ const router = createRouter({
           (Array.isArray(route.query.sections) ? route.query.sections : [route.query.sections]) : 
           []
       })
+    },
+    {
+      path: '/verify-email',
+      name: 'verify-email',
+      component: EmailVerificationPage
     }
   ]
 })
