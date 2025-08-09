@@ -3,9 +3,12 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from datetime import datetime
 import os
+from pathlib import Path
 
-# Database URL for SQLite
-DATABASE_URL = "sqlite:///./comics_auth.db"
+# Database URL for SQLite - store in the centralized Database directory
+database_dir = Path(__file__).parent.parent.parent / "Database"
+database_path = database_dir / "comics_auth.db"
+DATABASE_URL = f"sqlite:///{database_path}"
 
 # Create engine
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})

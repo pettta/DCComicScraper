@@ -14,7 +14,18 @@
     <!-- Header -->
     <v-app-bar color="#2c3e50" dark elevation="0" height="120" class="header-glass">
       <v-container class="d-flex justify-space-between align-center">
+        
+        <!-- The Order Nexus Button (Top Left) -->
         <div class="d-flex align-center">
+          <v-btn
+            variant="text"
+            color="white"
+            class="text-h5 font-weight-bold mr-4"
+            @click="goToHome"
+            style="text-transform: none;"
+          >
+            The Order Nexus
+          </v-btn>
           <v-btn
             icon="mdi-arrow-left"
             variant="text"
@@ -150,6 +161,10 @@ onMounted(() => {
 // Navigation methods
 const goBack = () => {
   router.push('/')
+}
+
+const goToHome = () => {
+  router.push({ name: 'home' })
 }
 
 const removeSection = (eraToRemove: string) => {

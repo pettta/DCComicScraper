@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { authApiClient } from '../clients/authClient'
 
-interface User {
+export interface User {
   id: number
   username: string
   email: string
@@ -13,18 +13,18 @@ interface User {
   last_login?: string
 }
 
-interface LoginResponse {
+export interface LoginResponse {
   access_token: string
   token_type: string
   expires_in: number
 }
 
-interface RegisterResponse {
+export interface RegisterResponse {
   message: string
   verification_sent: boolean
 }
 
-interface VerifyEmailResponse {
+export interface VerifyEmailResponse {
   message: string
   access_token: string
   token_type: string
@@ -36,7 +36,6 @@ export const useAuthStore = defineStore('auth', () => {
   // State
   const user = ref<User | null>(null)
   const token = ref<string | null>(localStorage.getItem('auth_token'))
-  const isLoading = ref(false)
 
   // Configure auth client on startup
   if (token.value) {
@@ -46,8 +45,10 @@ export const useAuthStore = defineStore('auth', () => {
   // Computed
   const isLoggedIn = computed(() => !!token.value && !!user.value)
   const isAdmin = computed(() => user.value?.is_admin || false)
+  const isEmailVerified = computed(() => user.value?.is_email_verified || false)
+  const userDisplayName = computed(() => user.value?.username || 'Guest')
 
-  // Actions
+  // Private helper actions
   const setAuthToken = (newToken: string) => {
     token.value = newToken
     localStorage.setItem('auth_token', newToken)
@@ -61,9 +62,8 @@ export const useAuthStore = defineStore('auth', () => {
     authApiClient.clearAuthToken()
   }
 
+  // Public actions
   const login = async (username: string, password: string) => {
-    isLoading.value = true
-    
     try {
       const response = await authApiClient.login(username, password)
       const { access_token } = response
@@ -76,8 +76,6 @@ export const useAuthStore = defineStore('auth', () => {
     } catch (error) {
       clearAuthToken()
       throw error
-    } finally {
-      isLoading.value = false
     }
   }
 
@@ -88,12 +86,13 @@ export const useAuthStore = defineStore('auth', () => {
       await authApiClient.logout()
     } catch (error) {
       console.error('Logout error:', error)
+      // Continue with logout even if server call fails
     } finally {
       clearAuthToken()
     }
   }
 
-  const getCurrentUser = async () => {
+  const getCurrentUser = async (): Promise<User | null> => {
     if (!token.value) return null
 
     try {
@@ -108,15 +107,11 @@ export const useAuthStore = defineStore('auth', () => {
   }
 
   const register = async (username: string, email: string, password: string): Promise<RegisterResponse> => {
-    isLoading.value = true
-
     try {
       const response = await authApiClient.register(username, email, password)
       return response
     } catch (error) {
       throw error
-    } finally {
-      isLoading.value = false
     }
   }
 
@@ -193,11 +188,12 @@ export const useAuthStore = defineStore('auth', () => {
     // State
     user,
     token,
-    isLoading,
     
     // Computed
     isLoggedIn,
     isAdmin,
+    isEmailVerified,
+    userDisplayName,
     
     // Actions
     login,

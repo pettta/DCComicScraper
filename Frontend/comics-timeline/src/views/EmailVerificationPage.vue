@@ -1,12 +1,31 @@
 <template>
-  <v-container class="fill-height">
-    <v-row justify="center" align="center">
-      <v-col cols="12" sm="8" md="6" lg="4">
-        <v-card class="mx-auto pa-6" elevation="8">
-          <v-card-title class="text-center mb-4">
-            <v-icon size="48" color="primary" class="mb-4">mdi-email-check</v-icon>
-            <div class="text-h5">Email Verification</div>
-          </v-card-title>
+  <v-app>
+    <!-- Header -->
+    <v-app-bar color="#2c3e50" dark elevation="0" height="80" class="header-glass">
+      <v-container class="d-flex align-center">
+        <v-btn
+          variant="text"
+          color="white"
+          class="text-h5 font-weight-bold"
+          @click="goToHome"
+          style="text-transform: none;"
+        >
+          The Order Nexus
+        </v-btn>
+        <v-spacer></v-spacer>
+        <div class="text-h6">Email Verification</div>
+      </v-container>
+    </v-app-bar>
+
+    <v-main>
+      <v-container class="fill-height">
+        <v-row justify="center" align="center">
+          <v-col cols="12" sm="8" md="6" lg="4">
+            <v-card class="mx-auto pa-6" elevation="8">
+              <v-card-title class="text-center mb-4">
+                <v-icon size="48" color="primary" class="mb-4">mdi-email-check</v-icon>
+                <div class="text-h5">Email Verification</div>
+              </v-card-title>
 
           <!-- Loading state -->
           <div v-if="isVerifying" class="text-center py-8">
@@ -111,27 +130,30 @@
       <v-icon>mdi-alert-circle</v-icon>
       {{ errorMessage }}
     </v-snackbar>
-  </v-container>
+        </v-container>
+      </v-main>
+    </v-app>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { useAuthStore } from '@/stores/auth'
+import { useAuthStore, useUIStore } from '@/stores'
 
 const route = useRoute()
 const router = useRouter()
 const authStore = useAuthStore()
+const uiStore = useUIStore()
 
 // State
-const isVerifying = ref(false)
+const isVerifying = computed(() => uiStore.componentLoadingStates.emailVerification || false)
 const verificationSuccess = ref(false)
 const verificationError = ref(false)
 const errorMessage = ref('')
 const successMessage = ref('')
 const showSuccessSnackbar = ref(false)
 const showErrorSnackbar = ref(false)
-const isResending = ref(false)
+const isResending = computed(() => uiStore.componentLoadingStates.resendEmail || false)
 
 // Get token from URL
 const token = route.query.token as string
@@ -143,7 +165,7 @@ const verifyEmail = async () => {
     return
   }
 
-  isVerifying.value = true
+  uiStore.setComponentLoading('emailVerification', true)
   verificationError.value = false
 
   try {
@@ -164,12 +186,12 @@ const verifyEmail = async () => {
     errorMessage.value = error.message || 'Failed to verify email. The link may be expired or invalid.'
     showErrorSnackbar.value = true
   } finally {
-    isVerifying.value = false
+    uiStore.clearComponentLoading('emailVerification')
   }
 }
 
 const resendVerification = async () => {
-  isResending.value = true
+  uiStore.setComponentLoading('resendEmail', true)
   
   try {
     // We don't have the email from the token, so we'll need to ask the user
@@ -184,7 +206,7 @@ const resendVerification = async () => {
     errorMessage.value = 'Failed to resend verification email'
     showErrorSnackbar.value = true
   } finally {
-    isResending.value = false
+    uiStore.clearComponentLoading('resendEmail')
   }
 }
 
@@ -194,6 +216,10 @@ const goToTimeline = () => {
 
 const goToLogin = () => {
   router.push('/')
+}
+
+const goToHome = () => {
+  router.push({ name: 'home' })
 }
 
 onMounted(() => {

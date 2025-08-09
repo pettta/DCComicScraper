@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog" max-width="400px" @click:outside="closeDialog">
+  <v-dialog v-model="uiStore.loginDialog" max-width="400px" @click:outside="closeDialog">
     <template v-slot:activator="{ props }">
       <v-btn
         v-if="!isLoggedIn"
@@ -150,15 +150,14 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { useAuthStore } from '@/stores/auth'
+import { useAuthStore, useUIStore } from '@/stores'
 
-// Auth store
+// Stores
 const authStore = useAuthStore()
+const uiStore = useUIStore()
 
-// Reactive data
-const dialog = ref(false)
+// Reactive data - remove dialog and loading state (now in UI store)
 const formValid = ref(false)
-const loading = ref(false)
 const errorMessage = ref('')
 const successMessage = ref('')
 const loginForm = ref()
@@ -215,6 +214,9 @@ const confirmPasswordRules = [
 const isLoggedIn = computed(() => authStore.isLoggedIn)
 const userInfo = computed(() => authStore.user)
 
+// Check if login form is loading
+const loading = computed(() => uiStore.formLoading.login || false)
+
 // Check if registration form is valid
 const isRegistrationValid = computed(() => {
   if (!isRegistering.value) return true // Only validate when in registration mode
@@ -265,11 +267,11 @@ const toggleMode = () => {
   }
   errorMessage.value = ''
   successMessage.value = ''
-  loading.value = false
+  uiStore.clearFormLoading('login')
 }
 
 const closeDialog = () => {
-  dialog.value = false
+  uiStore.closeLoginDialog()
   // Reset everything including the mode when closing
   isRegistering.value = false
   resetForm()
@@ -292,14 +294,14 @@ const resetForm = () => {
   }
   errorMessage.value = ''
   successMessage.value = ''
-  loading.value = false
+  uiStore.clearFormLoading('login')
   // Don't reset isRegistering here - let toggleMode handle that
 }
 
 const handleLogin = async () => {
   if (!formValid.value) return
 
-  loading.value = true
+  uiStore.setFormLoading('login', true)
   errorMessage.value = ''
   successMessage.value = ''
 
@@ -331,7 +333,7 @@ const handleLogin = async () => {
       errorMessage.value = 'Login failed. Please try again.'
     }
   } finally {
-    loading.value = false
+    uiStore.clearFormLoading('login')
   }
 }
 
@@ -340,7 +342,7 @@ const handleRegister = async () => {
     return
   }
 
-  loading.value = true
+  uiStore.setFormLoading('login', true)
   errorMessage.value = ''
   successMessage.value = ''
 
@@ -372,7 +374,7 @@ const handleRegister = async () => {
       errorMessage.value = 'Registration failed. Please try again.'
     }
   } finally {
-    loading.value = false
+    uiStore.clearFormLoading('login')
   }
 }
 

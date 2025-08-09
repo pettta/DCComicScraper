@@ -56,13 +56,14 @@ Create a `.env` file with:
 ```
 SECRET_KEY=your-super-secret-key-change-this-in-production
 ACCESS_TOKEN_EXPIRE_MINUTES=30
-DATABASE_URL=sqlite:///./comics_auth.db
+DATABASE_URL=sqlite:///../../Database/comics_auth.db
 ```
 
 ## Database
 
-The application automatically creates a SQLite database (`comics_auth.db`) with the following tables:
-- `users` - User accounts and profiles
+The application automatically creates a SQLite database (`comics_auth.db`) in the centralized `Database` directory with the following tables:
+- `users` - User accounts and profiles with email verification support
+- `email_verifications` - Email verification tokens
 - `token_blacklist` - Revoked tokens
 
 ## Usage Example

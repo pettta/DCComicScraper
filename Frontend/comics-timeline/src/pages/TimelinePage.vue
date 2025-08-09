@@ -15,6 +15,19 @@
     <v-app-bar color="#2c3e50" dark elevation="0" height="120" class="header-glass">
       <v-container class="d-flex justify-space-between align-center">
         
+        <!-- The Order Nexus Button (Top Left) -->
+        <div class="d-flex align-center">
+          <v-btn
+            variant="text"
+            color="white"
+            class="text-h5 font-weight-bold mr-4"
+            @click="goToHome"
+            style="text-transform: none;"
+          >
+            The Order Nexus
+          </v-btn>
+        </div>
+        
         <div class="text-center flex-grow-1">
           <h1 class="text-h3 mb-2 header-title">{{ selectedPublisher }} Comics Timeline</h1>
           <p class="text-h6 mb-0 header-subtitle">Explore the history and eras of {{ selectedPublisher }} Comics</p>
@@ -119,12 +132,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, watch } from 'vue'
+import { ref, onMounted, watch, computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { timelineClient } from '../clients'
 import type { LegendEra } from '../types/ui'
 import Timeline from '../components/Timeline.vue'
 import LoginDialog from '../components/LoginDialog.vue'
+import { useUIStore } from '@/stores'
 
 // Import modular styles
 import '../styles/index.css'
@@ -137,6 +151,7 @@ const props = defineProps<{
 // Router
 const router = useRouter()
 const route = useRoute()
+const uiStore = useUIStore()
 
 // Publisher selection
 const publishers = ['DC', 'Marvel']
@@ -144,7 +159,7 @@ const selectedPublisher = ref<string>('DC')
 
 // Define reactive legend data
 const legendData = ref<LegendEra[]>([])
-const loading = ref(true)
+const loading = computed(() => uiStore.pageLoading)
 const error = ref<string | null>(null)
 const selectedEras = ref<string[]>(props.selectedEras || [])
 
@@ -157,7 +172,7 @@ watch(() => props.selectedEras, (newEras) => {
 }, { immediate: true })
 
 const fetchLegendData = async (publisher: string) => {
-  loading.value = true
+  uiStore.setPageLoading(true)
   error.value = null
   
   try {
@@ -173,7 +188,7 @@ const fetchLegendData = async (publisher: string) => {
     console.error('Error fetching timeline data:', err)
     legendData.value = []
   } finally {
-    loading.value = false
+    uiStore.setPageLoading(false)
   }
 }
 
@@ -216,6 +231,11 @@ const loadCurrentSections = async () => {
       publisher: selectedPublisher.value
     }
   })
+}
+
+// Navigate to home page
+const goToHome = () => {
+  router.push({ name: 'home' })
 }
 
 // Fetch data when component mounts
