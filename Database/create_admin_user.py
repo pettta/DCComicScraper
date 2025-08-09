@@ -198,7 +198,7 @@ Examples:
         print("\nNext steps:")
         print("   1. Start the OAuth proxy: cd ../Backend/comics-timeline-oauth-proxy && python local_setup.py")
         print(f"   2. Test admin login: python admin_user_manager.py -u {username} -p [password]")
-        print(f"\n📁 Database created at: {os.path.join(oauth_proxy_path, 'comics_auth.db')}")
+        print(f"\n📁 Database created")
     else:
         print("\n❌ Failed to create admin user. Please check the errors above.")
         sys.exit(1)

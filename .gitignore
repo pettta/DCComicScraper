@@ -3,3 +3,4 @@ __pycache__
 /Backend/comics-timeline-oauth-proxy/.env
 /Database/comics_auth.db
 /Database/comics_timeline.db
+
